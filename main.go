@@ -1,24 +1,23 @@
 package main
 
 import (
-	"fmt"
-	"log"
-	"net/http"
-
 	"github.com/MattyDroidX/hotel-ease-backend/api/db"
-    "github.com/MattyDroidX/hotel-ease-backend/handlers"
-    "github.com/MattyDroidX/hotel-ease-backend/models"
-	"github.com/gorilla/mux"
+	"github.com/MattyDroidX/hotel-ease-backend/handlers"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	db.Connect()
 
-	r := mux.NewRouter()
-	r.HandleFunc("/funcionario", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "API Funcionando 👌")
-	}).Methods("GET")
+	router := gin.Default()
 
-	fmt.Println("🚀 Servidor rodando em http://localhost:8080")
-	log.Fatal(http.ListenAndServe(":8080", r))
+	// Funcionários
+	router.GET("/funcionarios", handlers.GetFuncionarios)
+	router.POST("/funcionarios", handlers.CreateFuncionario)
+
+	// Tarefas
+	router.GET("/tarefas", handlers.GetTarefas)
+	router.POST("/tarefas", handlers.CreateTarefa)
+
+	router.Run(":8080")
 }
