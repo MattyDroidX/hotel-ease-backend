@@ -1,28 +1,24 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/joho/godotenv"
+	"fmt"
 	"log"
-	"os"
-	"hotel-ease-backend/db"
-	"hotel-ease-backend/handlers"
+	"net/http"
+
+	"github.com/MattyDroidX/hotel-ease-backend/api/db"
+    "github.com/MattyDroidX/hotel-ease-backend/handlers"
+    "github.com/MattyDroidX/hotel-ease-backend/models"
+	"github.com/gorilla/mux"
 )
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatal("Erro ao carregar .env")
-	}
-
 	db.Connect()
 
-	router := gin.Default()
+	r := mux.NewRouter()
+	r.HandleFunc("/funcionario", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprint(w, "API Funcionando 👌")
+	}).Methods("GET")
 
-	// Rotas
-	router.GET("/funcionarios", handlers.GetFuncionarios)
-	router.POST("/funcionarios", handlers.CreateFuncionario)
-	// + outras rotas
-
-	router.Run(":" + os.Getenv("PORT"))
+	fmt.Println("🚀 Servidor rodando em http://localhost:8080")
+	log.Fatal(http.ListenAndServe(":8080", r))
 }

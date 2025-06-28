@@ -3,8 +3,8 @@ package handlers
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"hotel-ease-backend/models"
-	"hotel-ease-backend/db"
+	"github.com/MattyDroidX/hotel-ease-backend/db"
+	"github.com/MattyDroidX/hotel-ease-backend/models"
 	"github.com/google/uuid"
 )
 
