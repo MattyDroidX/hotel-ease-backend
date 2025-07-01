@@ -19,6 +19,19 @@ func GetFuncionarios(c *gin.Context) {
 	c.JSON(http.StatusOK, funcionarios)
 }
 
+func GetFuncionarioByID(c *gin.Context) {
+	id := c.Param("id")
+
+	var f models.Funcionario
+	err := db.DB.Get(&f, "SELECT * FROM funcionarios WHERE id = $1", id)
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"erro": "Funcionário não encontrado"})
+		return
+	}
+
+	c.JSON(http.StatusOK, f)
+}
+
 func CreateFuncionario(c *gin.Context) {
 	var f models.Funcionario
 	if err := c.ShouldBindJSON(&f); err != nil {
@@ -37,4 +50,42 @@ func CreateFuncionario(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusCreated, f)
+
+}
+
+func DeleteFuncionario(c *gin.Context) {
+	id := c.Param("id")
+
+	_, err := db.DB.Exec("DELETE FROM funcionarios WHERE id = $1", id)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"erro": "Erro ao excluir funcionário"})
+		return
+	}
+
+	c.Status(http.StatusNoContent)
+}
+
+func UpdateFuncionario(c *gin.Context) {
+	id := c.Param("id")
+
+	var f models.Funcionario
+	if err := c.ShouldBindJSON(&f); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"erro": "JSON inválido"})
+		return
+	}
+
+	f.ID = id
+
+	_, err := db.DB.NamedExec(`
+		UPDATE funcionarios 
+		SET nome = :nome, sobrenome = :sobrenome, email = :email, telefone = :telefone, cargo = :cargo, ativo = :ativo 
+		WHERE id = :id
+	`, &f)
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"erro": "Erro ao atualizar funcionário"})
+		return
+	}
+
+	c.JSON(http.StatusOK, f)
 }

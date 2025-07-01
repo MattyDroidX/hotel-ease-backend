@@ -19,6 +19,19 @@ func GetTarefas(c *gin.Context) {
 	c.JSON(http.StatusOK, tarefas)
 }
 
+func GetTarefaByID(c *gin.Context) {
+	id := c.Param("id")
+
+	var f models.Tarefa
+	err := db.DB.Get(&f, "SELECT * FROM tarefas WHERE id = $1", id)
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"erro": "Tarefa não encontrada"})
+		return
+	}
+
+	c.JSON(http.StatusOK, f)
+}
+
 func CreateTarefa(c *gin.Context) {
 	var t models.Tarefa
 	if err := c.ShouldBindJSON(&t); err != nil {
@@ -38,4 +51,46 @@ func CreateTarefa(c *gin.Context) {
 		return
 	}
 	c.JSON(http.StatusCreated, t)
+}
+
+func DeleteTarefa(c *gin.Context) {
+	id := c.Param("id")
+
+	_, err := db.DB.Exec("DELETE FROM tarefas WHERE id = $1", id)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"erro": "Erro ao excluir tarefa"})
+		return
+	}
+
+	c.Status(http.StatusNoContent)
+}
+
+func UpdateTarefa(c *gin.Context) {
+    id := c.Param("id")
+    var t models.Tarefa
+
+    if err := c.ShouldBindJSON(&t); err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"erro": "JSON inválido"})
+        return
+    }
+
+    t.ID = id
+
+    _, err := db.DB.NamedExec(`
+        UPDATE tarefas SET
+          numero = :numero,
+          funcionario = :funcionario,
+          descricao = :descricao,
+          data_hora = :data_hora,
+          status = :status,
+          tipo = :tipo
+        WHERE id = :id
+    `, &t)
+
+    if err != nil {
+    c.JSON(http.StatusInternalServerError, gin.H{"erro": err.Error()})
+    return
+	}
+
+    c.JSON(http.StatusOK, t)
 }
