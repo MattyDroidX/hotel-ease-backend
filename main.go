@@ -7,7 +7,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 
-	"github.com/MattyDroidX/hotel-ease-backend"
 	"github.com/MattyDroidX/hotel-ease-backend/api/db"
 	"github.com/MattyDroidX/hotel-ease-backend/api/middleware"
 	"github.com/MattyDroidX/hotel-ease-backend/api/routes"

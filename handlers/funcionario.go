@@ -9,6 +9,14 @@ import (
 	"github.com/MattyDroidX/hotel-ease-backend/models"
 )
 
+// GetFuncionarios retorna a lista de todos os funcionários
+// @Summary Lista de funcionários
+// @Description Retorna todos os funcionários cadastrados
+// @Tags Funcionários
+// @Produce json
+// @Success 200 {array} models.Funcionario
+// @Failure 500 {object} map[string]string
+// @Router /funcionarios [get]
 func GetFuncionarios(c *gin.Context) {
 	var funcionarios []models.Funcionario
 	err := db.DB.Select(&funcionarios, "SELECT * FROM funcionarios")
@@ -27,6 +35,15 @@ func GetFuncionarios(c *gin.Context) {
 	})
 }
 
+// GetFuncionarioByID retorna um funcionário por ID
+// @Summary Busca funcionário por ID
+// @Description Retorna todos os dados de um funcionário específico
+// @Tags Funcionários
+// @Produce json
+// @Param id path string true "ID do Funcionário"
+// @Success 200 {object} models.Funcionario
+// @Failure 404 {object} map[string]string
+// @Router /funcionarios/{id} [get]
 func GetFuncionarioByID(c *gin.Context) {
 	id := c.Param("id")
 	var f models.Funcionario
@@ -47,6 +64,16 @@ func GetFuncionarioByID(c *gin.Context) {
 	})
 }
 
+// CreateFuncionario cria o funcionário
+// @Summary Criacao de funcionário
+// @Description Cadastro de Funcionario
+// @Tags Funcionários
+// @Accept json
+// @Produce json
+// @Success 201 {object} models.Funcionario
+// @Failure 400 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /funcionarios [post]
 func CreateFuncionario(c *gin.Context) {
 	var f models.Funcionario
 	if err := c.ShouldBindJSON(&f); err != nil {
@@ -78,6 +105,18 @@ func CreateFuncionario(c *gin.Context) {
 		"dados": f,
 	})
 }
+
+// UpdateFuncionario atualiza os dados de um funcionário
+// @Summary Atualiza dados de um funcionário
+// @Description Atualiza todos os campos de um funcionário existente
+// @Tags Funcionários
+// @Accept json
+// @Produce json
+// @Param id path string true "ID do Funcionário"
+// @Success 200 {object} models.Funcionario
+// @Failure 400 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /funcionarios/{id} [put]
 
 func UpdateFuncionario(c *gin.Context) {
 	id := c.Param("id")
@@ -119,6 +158,15 @@ func UpdateFuncionario(c *gin.Context) {
 	})
 }
 
+// DeleteFuncionario apaga um funcionário
+// @Summary Exclui um funcionário
+// @Description Remove permanentemente um funcionário do sistema
+// @Tags Funcionários
+// @Produce json
+// @Param id path string true "ID do Funcionário"
+// @Success 200 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /funcionarios/{id} [delete]
 func DeleteFuncionario(c *gin.Context) {
 	id := c.Param("id")
 	_, err := db.DB.Exec("DELETE FROM funcionarios WHERE id = $1", id)

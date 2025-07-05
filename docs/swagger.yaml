@@ -1,0 +1,287 @@
+basePath: /
+definitions:
+  models.Funcionario:
+    properties:
+      ativo:
+        example: true
+        type: boolean
+      cargo:
+        example: Recepcionista
+        type: string
+      email:
+        example: joao.silva@email.com
+        type: string
+      id:
+        example: 123e4567-e89b-12d3-a456-426614174000
+        type: string
+      nome:
+        example: João
+        type: string
+      sobrenome:
+        example: Silva
+        type: string
+      telefone:
+        example: +55 11 91234-5678
+        type: string
+    type: object
+  models.Tarefa:
+    properties:
+      data_hora:
+        example: "2025-07-05T15:04:05Z"
+        type: string
+      descricao:
+        example: Limpar o quarto 204
+        type: string
+      funcionario:
+        example: 123e4567-e89b-12d3-a456-426614174000
+        type: string
+      id:
+        example: 123e4567-e89b-12d3-a456-426614174001
+        type: string
+      numero:
+        example: T-2025-001
+        type: string
+      status:
+        example: pendente
+        type: string
+      tipo:
+        example: Limpeza
+        type: string
+    type: object
+host: localhost:8080
+info:
+  contact:
+    name: Suporte HotelEase
+  description: API para gerenciamento de tarefas e funcionários no HotelEase
+  title: HotelEase API
+  version: "1.0"
+paths:
+  /funcionarios:
+    get:
+      description: Retorna todos os funcionários cadastrados
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Funcionario'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Lista de funcionários
+      tags:
+      - Funcionários
+    post:
+      consumes:
+      - application/json
+      description: Cadastro de Funcionario
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.Funcionario'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Criacao de funcionário
+      tags:
+      - Funcionários
+  /funcionarios/{id}:
+    delete:
+      description: Remove permanentemente um funcionário do sistema
+      parameters:
+      - description: ID do Funcionário
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Exclui um funcionário
+      tags:
+      - Funcionários
+    get:
+      description: Retorna todos os dados de um funcionário específico
+      parameters:
+      - description: ID do Funcionário
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Funcionario'
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Busca funcionário por ID
+      tags:
+      - Funcionários
+  /tarefas:
+    get:
+      description: Retorna todas as tarefas cadastradas
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            items:
+              $ref: '#/definitions/models.Tarefa'
+            type: array
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Lista de tarefas
+      tags:
+      - Tarefas
+    post:
+      consumes:
+      - application/json
+      description: Cadastra uma nova tarefa
+      produces:
+      - application/json
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.Tarefa'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Criação de tarefa
+      tags:
+      - Tarefas
+  /tarefas/{id}:
+    delete:
+      description: Remove permanentemente uma tarefa do sistema
+      parameters:
+      - description: ID da Tarefa
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Exclui uma tarefa
+      tags:
+      - Tarefas
+    get:
+      description: Retorna todos os dados de uma tarefa específica
+      parameters:
+      - description: ID da Tarefa
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Tarefa'
+        "404":
+          description: Not Found
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Busca tarefa por ID
+      tags:
+      - Tarefas
+    put:
+      consumes:
+      - application/json
+      description: Atualiza todos os campos de uma tarefa existente
+      parameters:
+      - description: ID da Tarefa
+        in: path
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.Tarefa'
+        "400":
+          description: Bad Request
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+        "500":
+          description: Internal Server Error
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Atualização de tarefa
+      tags:
+      - Tarefas
+swagger: "2.0"

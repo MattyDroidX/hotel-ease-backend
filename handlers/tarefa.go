@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"net/http"
+	"log"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
@@ -9,24 +10,42 @@ import (
 	"github.com/MattyDroidX/hotel-ease-backend/models"
 )
 
+// GetTarefas retorna a lista de todas as tarefas
+// @Summary Lista de tarefas
+// @Description Retorna todas as tarefas cadastradas
+// @Tags Tarefas
+// @Produce json
+// @Success 200 {array} models.Tarefa
+// @Failure 500 {object} map[string]string
+// @Router /tarefas [get]
 func GetTarefas(c *gin.Context) {
 	var tarefas []models.Tarefa
 	err := db.DB.Select(&tarefas, "SELECT * FROM tarefas")
 	if err != nil {
+		log.Printf("Erro ao buscar tarefas: %v", err)
 		c.JSON(http.StatusInternalServerError, gin.H{
-			"status": "error",
+			"status":   "error",
 			"mensagem": "Erro ao buscar tarefas",
-			"detalhe": err.Error(),
+			"detalhe":  err.Error(),
 		})
 		return
 	}
 	c.JSON(http.StatusOK, gin.H{
-		"status": "success",
+		"status":   "success",
 		"mensagem": "Tarefas carregadas com sucesso",
-		"dados": tarefas,
+		"dados":    tarefas,
 	})
 }
 
+// GetTarefaByID retorna uma tarefa por ID
+// @Summary Busca tarefa por ID
+// @Description Retorna todos os dados de uma tarefa específica
+// @Tags Tarefas
+// @Produce json
+// @Param id path string true "ID da Tarefa"
+// @Success 200 {object} models.Tarefa
+// @Failure 404 {object} map[string]string
+// @Router /tarefas/{id} [get]
 func GetTarefaByID(c *gin.Context) {
 	id := c.Param("id")
 	var t models.Tarefa
@@ -34,26 +53,37 @@ func GetTarefaByID(c *gin.Context) {
 	err := db.DB.Get(&t, "SELECT * FROM tarefas WHERE id = $1", id)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{
-			"status": "error",
+			"status":   "error",
 			"mensagem": "Tarefa não encontrada",
+			"detalhe": err.Error(),
 		})
 		return
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"status": "success",
+		"status":   "success",
 		"mensagem": "Tarefa encontrada",
-		"dados": t,
+		"dados":    t,
 	})
 }
 
+// CreateTarefa cria uma nova tarefa
+// @Summary Criação de tarefa
+// @Description Cadastra uma nova tarefa
+// @Tags Tarefas
+// @Accept json
+// @Produce json
+// @Success 201 {object} models.Tarefa
+// @Failure 400 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /tarefas [post]
 func CreateTarefa(c *gin.Context) {
 	var t models.Tarefa
 	if err := c.ShouldBindJSON(&t); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
-			"status": "error",
+			"status":   "error",
 			"mensagem": "JSON inválido",
-			"detalhe": err.Error(),
+			"detalhe":  err.Error(),
 		})
 		return
 	}
@@ -66,29 +96,40 @@ func CreateTarefa(c *gin.Context) {
 	)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
-			"status": "error",
+			"status":   "error",
 			"mensagem": "Erro ao salvar tarefa",
-			"detalhe": err.Error(),
+			"detalhe":  err.Error(),
 		})
 		return
 	}
 
 	c.JSON(http.StatusCreated, gin.H{
-		"status": "success",
+		"status":   "success",
 		"mensagem": "Tarefa criada com sucesso",
-		"dados": t,
+		"dados":    t,
 	})
 }
 
+// UpdateTarefa atualiza os dados de uma tarefa
+// @Summary Atualização de tarefa
+// @Description Atualiza todos os campos de uma tarefa existente
+// @Tags Tarefas
+// @Accept json
+// @Produce json
+// @Param id path string true "ID da Tarefa"
+// @Success 200 {object} models.Tarefa
+// @Failure 400 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /tarefas/{id} [put]
 func UpdateTarefa(c *gin.Context) {
 	id := c.Param("id")
 	var t models.Tarefa
 
 	if err := c.ShouldBindJSON(&t); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
-			"status": "error",
+			"status":   "error",
 			"mensagem": "JSON inválido",
-			"detalhe": err.Error(),
+			"detalhe":  err.Error(),
 		})
 		return
 	}
@@ -107,35 +148,44 @@ func UpdateTarefa(c *gin.Context) {
 
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
-			"status": "error",
+			"status":   "error",
 			"mensagem": "Erro ao atualizar tarefa",
-			"detalhe": err.Error(),
+			"detalhe":  err.Error(),
 		})
 		return
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"status": "success",
+		"status":   "success",
 		"mensagem": "Tarefa atualizada com sucesso",
-		"dados": t,
+		"dados":    t,
 	})
 }
 
+// DeleteTarefa exclui uma tarefa
+// @Summary Exclui uma tarefa
+// @Description Remove permanentemente uma tarefa do sistema
+// @Tags Tarefas
+// @Produce json
+// @Param id path string true "ID da Tarefa"
+// @Success 200 {object} map[string]string
+// @Failure 500 {object} map[string]string
+// @Router /tarefas/{id} [delete]
 func DeleteTarefa(c *gin.Context) {
 	id := c.Param("id")
 
 	_, err := db.DB.Exec("DELETE FROM tarefas WHERE id = $1", id)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{
-			"status": "error",
+			"status":   "error",
 			"mensagem": "Erro ao excluir tarefa",
-			"detalhe": err.Error(),
+			"detalhe":  err.Error(),
 		})
 		return
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"status": "success",
+		"status":   "success",
 		"mensagem": "Tarefa excluída com sucesso",
 	})
 }
