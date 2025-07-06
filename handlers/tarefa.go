@@ -13,10 +13,16 @@ import (
 )
 
 const qDTO = `
-SELECT t.id, t.numero, t.descricao, t.data_hora,
-       t.status, t.tipo,
-       concat(f.nome,' ',f.sobrenome) AS funcionario_nome,
-       f.id                           AS funcionario_id
+SELECT  t.id,
+        t.numero,
+        t.descricao,
+        t.data_hora,
+        t.status,
+        t.tipo,
+
+        COALESCE(concat(f.nome,' ',f.sobrenome), '') AS funcionario_nome,
+        COALESCE(f.id::text, '')                    AS funcionario_id   -- ← evita NULL
+
   FROM tarefas t
   LEFT JOIN funcionarios f ON f.id = t.funcionario
 `
