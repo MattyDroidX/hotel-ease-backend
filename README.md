@@ -1,4 +1,6 @@
-# Hotel Ease – Back-end (Go + PostgreSQL)
+![Tela inicial](public/image.png)
+
+# Hotel Ease – Back-end (Go + PostgreSQL)`
 
 ## CURSO DE TECNÓLOGO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS 
 
