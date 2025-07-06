@@ -61,12 +61,12 @@ func main() {
 	routes.RegisterFuncionarioRoutes(router)
 	routes.RegisterTarefaRoutes(router)
 
-	utils.Info("✅ Servidor rodando em: http://localhost:%s", port)
-	utils.Info("📚 Swagger disponível em: http://localhost:%s/swagger/index.html", port)
+	utils.Info("Servidor rodando em: http://localhost:%s", port)
+	utils.Info("Swagger disponível em: http://localhost:%s/swagger/index.html", port)
 
 	// Rodar servidor
 	err = router.Run(":" + port)
 	if err != nil {
-		utils.Error("❌ Erro ao iniciar servidor: %v", err.Error())
+		utils.Error("Erro ao iniciar servidor: %v", err.Error())
 	}
 }

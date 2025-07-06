@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "🌍 Iniciando servidor..."
+echo "Iniciando servidor..."
 go run main.go

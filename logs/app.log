@@ -86,3 +86,719 @@
 2025/07/06 00:58:03 logger.go:23: [INFO] Funcionarios carregados: 
 2025/07/06 00:58:03 logger.go:23: [INFO] RequestID: ea132165-63e5-453c-b1cc-4ec09a1f5cac | GET /funcionarios | Status: OK | Duração: 443.32µs
 2025/07/06 00:58:03 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:58:03 BST] GET /funcionarios - ::1 - 455.442µs
+2025/07/06 01:12:00 logger.go:23: [INFO] ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 01:12:00 logger.go:23: [INFO] 📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 01:12:11 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 01:12:11 logger.go:23: [INFO] RequestID: 21ec5c23-f626-4785-91eb-4856bc1b4aa4 | GET /funcionarios | Status: OK | Duração: 2.380127ms
+2025/07/06 01:12:11 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:11 BST] GET /funcionarios - ::1 - 2.393973ms
+2025/07/06 01:12:11 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 01:12:11 logger.go:23: [INFO] RequestID: badc1123-e798-46ad-b207-8dc2a1efe917 | GET /funcionarios | Status: OK | Duração: 412.449µs
+2025/07/06 01:12:11 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:11 BST] GET /funcionarios - ::1 - 422.822µs
+2025/07/06 01:12:11 logger.go:31: [ERROR] Erro ao buscar tarefas: pq: operator does not exist: uuid = text
+2025/07/06 01:12:11 logger.go:23: [INFO] RequestID: 218c926f-fabf-4649-b3e0-51520d2043d9 | GET /tarefas | Status: Internal Server Error | Duração: 12.586731ms
+2025/07/06 01:12:11 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:11 BST] GET /tarefas - ::1 - 12.610728ms
+2025/07/06 01:12:11 logger.go:31: [ERROR] Erro ao buscar tarefas: pq: operator does not exist: uuid = text
+2025/07/06 01:12:11 logger.go:23: [INFO] RequestID: 2354851d-d16a-4470-8377-be570d9ee5b1 | GET /tarefas | Status: Internal Server Error | Duração: 306.489µs
+2025/07/06 01:12:11 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:11 BST] GET /tarefas - ::1 - 315.646µs
+2025/07/06 01:12:23 logger.go:31: [ERROR] Erro ao buscar tarefas: pq: operator does not exist: uuid = text
+2025/07/06 01:12:23 logger.go:23: [INFO] RequestID: 6a09db45-66fa-4fb4-9a26-ec7ccc18667e | GET /tarefas | Status: Internal Server Error | Duração: 722.11µs
+2025/07/06 01:12:23 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:23 BST] GET /tarefas - ::1 - 734.627µs
+2025/07/06 01:12:23 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 01:12:23 logger.go:23: [INFO] RequestID: b5dba87d-ae30-4076-846d-7d5dd7b37e6f | GET /funcionarios | Status: OK | Duração: 1.073669ms
+2025/07/06 01:12:23 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:23 BST] GET /funcionarios - ::1 - 1.088613ms
+2025/07/06 01:12:23 logger.go:31: [ERROR] Erro ao buscar tarefas: pq: operator does not exist: uuid = text
+2025/07/06 01:12:23 logger.go:23: [INFO] RequestID: a0a5479b-8b28-4025-a3a3-70e4e3382dcc | GET /tarefas | Status: Internal Server Error | Duração: 388.033µs
+2025/07/06 01:12:23 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:23 BST] GET /tarefas - ::1 - 403.868µs
+2025/07/06 01:12:23 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 01:12:23 logger.go:23: [INFO] RequestID: 54a1f61c-51ff-4168-85e7-024fc476d4e3 | GET /funcionarios | Status: OK | Duração: 327.005µs
+2025/07/06 01:12:23 logger.go:23: [INFO] [Sun, 06 Jul 2025 01:12:23 BST] GET /funcionarios - ::1 - 334.193µs
+2025/07/06 01:17:30 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 01:17:30 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 01:17:37 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:17:37 logger.go:36: [INFO]  request=457f1870-bf6f-4c7e-9a7f-fc13cbcae2ce | GET /funcionarios | status=200(OK) | 1.21272ms
+2025/07/06 01:17:37 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:17:37 BST] GET /funcionarios - ::1 - 1.333887ms
+2025/07/06 01:17:37 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:17:37 logger.go:36: [INFO]  request=d840a9a0-87c9-4d00-bf1e-6b4d5de76408 | GET /funcionarios | status=200(OK) | 733.573µs
+2025/07/06 01:17:37 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:17:37 BST] GET /funcionarios - ::1 - 829.787µs
+2025/07/06 01:17:43 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:17:43 logger.go:36: [INFO]  request=bf293179-084e-49d7-970d-9aa527c04905 | GET /funcionarios | status=200(OK) | 573.878µs
+2025/07/06 01:17:43 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:17:43 BST] GET /funcionarios - ::1 - 616.662µs
+2025/07/06 01:17:43 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:17:43 logger.go:36: [INFO]  request=47a74ff1-b26c-446a-a300-3c97d8c6d124 | GET /funcionarios | status=200(OK) | 1.057873ms
+2025/07/06 01:17:43 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:17:43 BST] GET /funcionarios - ::1 - 1.101587ms
+2025/07/06 01:17:43 logger.go:38: [ERROR] Erro ao buscar tarefas: pq: operator does not exist: uuid = text
+2025/07/06 01:17:43 logger.go:36: [INFO]  request=f805c926-338f-433d-82cb-a4f4fe99e0e6 | GET /tarefas | status=500(Internal Server Error) | 6.980591ms
+2025/07/06 01:17:43 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:17:43 BST] GET /tarefas - ::1 - 7.012396ms
+2025/07/06 01:17:43 logger.go:38: [ERROR] Erro ao buscar tarefas: pq: operator does not exist: uuid = text
+2025/07/06 01:17:43 logger.go:36: [INFO]  request=dddb0c5b-337b-4065-9ae7-f7f67d9dbefe | GET /tarefas | status=500(Internal Server Error) | 461.226µs
+2025/07/06 01:17:43 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:17:43 BST] GET /tarefas - ::1 - 499.608µs
+2025/07/06 01:29:23 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:29:23 logger.go:36: [INFO]  request=16990385-72a4-4733-bb68-39b5fdf3d5ba | GET /funcionarios | status=200(OK) | 1.314389ms
+2025/07/06 01:29:23 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:29:23 BST] GET /funcionarios - ::1 - 1.432301ms
+2025/07/06 01:29:23 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:29:23 logger.go:36: [INFO]  request=feb4fd9d-f51b-4a27-b2a7-f7ab862e27b1 | GET /tarefas | status=200(OK) | 2.981491ms
+2025/07/06 01:29:23 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:29:23 BST] GET /tarefas - ::1 - 3.02752ms
+2025/07/06 01:29:23 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:29:23 logger.go:36: [INFO]  request=a344bca1-6a6b-45ba-974b-568d0714a8bf | GET /tarefas | status=200(OK) | 881.937µs
+2025/07/06 01:29:23 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:29:23 BST] GET /tarefas - ::1 - 970.949µs
+2025/07/06 01:29:23 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:29:23 logger.go:36: [INFO]  request=9599f619-bd3d-473b-9ac5-51587ee5fe04 | GET /funcionarios | status=200(OK) | 418µs
+2025/07/06 01:29:23 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:29:23 BST] GET /funcionarios - ::1 - 462.977µs
+2025/07/06 01:31:54 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 01:31:54 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 01:32:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:32:00 logger.go:36: [INFO]  request=1bf6cc48-0b14-48c3-8316-c42e9ca17d7a | GET /funcionarios | status=200(OK) | 1.436547ms
+2025/07/06 01:32:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:00 BST] GET /funcionarios - ::1 - 1.560783ms
+2025/07/06 01:32:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:32:00 logger.go:36: [INFO]  request=2996b90d-2d5d-4140-a44f-f53039b0e4f5 | GET /funcionarios | status=200(OK) | 411.769µs
+2025/07/06 01:32:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:00 BST] GET /funcionarios - ::1 - 443.599µs
+2025/07/06 01:32:04 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:32:04 logger.go:36: [INFO]  request=1e6b1753-9371-4452-9981-53732a6a05e8 | GET /funcionarios | status=200(OK) | 504.542µs
+2025/07/06 01:32:04 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:04 BST] GET /funcionarios - ::1 - 544.984µs
+2025/07/06 01:32:04 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:32:04 logger.go:36: [INFO]  request=17d3d62c-2654-431c-946a-b0fb5c77faf8 | GET /funcionarios | status=200(OK) | 564.63µs
+2025/07/06 01:32:04 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:04 BST] GET /funcionarios - ::1 - 607.284µs
+2025/07/06 01:32:06 logger.go:38: [ERROR] Erro ao buscar tarefas: missing destination name data_hora in *[]models.TarefaDTO
+2025/07/06 01:32:06 logger.go:36: [INFO]  request=7df340fa-4782-426a-a306-c44ab6430450 | GET /tarefas | status=500(Internal Server Error) | 1.583937ms
+2025/07/06 01:32:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:06 BST] GET /tarefas - ::1 - 1.617818ms
+2025/07/06 01:32:06 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:32:06 logger.go:36: [INFO]  request=1c997565-4f4e-4712-8221-f586b5a2a49a | GET /funcionarios | status=200(OK) | 4.629791ms
+2025/07/06 01:32:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:06 BST] GET /funcionarios - ::1 - 4.667351ms
+2025/07/06 01:32:06 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:32:06 logger.go:36: [INFO]  request=342bfd63-7369-4bad-b799-d6d37faa04fa | GET /funcionarios | status=200(OK) | 472.069µs
+2025/07/06 01:32:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:06 BST] GET /funcionarios - ::1 - 504.522µs
+2025/07/06 01:32:06 logger.go:38: [ERROR] Erro ao buscar tarefas: missing destination name data_hora in *[]models.TarefaDTO
+2025/07/06 01:32:06 logger.go:36: [INFO]  request=492f9396-ff86-4c1e-beb4-56cbeae2b4ae | GET /tarefas | status=500(Internal Server Error) | 1.477141ms
+2025/07/06 01:32:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:32:06 BST] GET /tarefas - ::1 - 1.505034ms
+2025/07/06 01:33:02 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 01:33:02 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 01:33:05 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:33:05 logger.go:36: [INFO]  request=c40a41df-2009-4cbc-ba52-f760c1318a52 | GET /funcionarios | status=200(OK) | 1.208863ms
+2025/07/06 01:33:05 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:05 BST] GET /funcionarios - ::1 - 1.349318ms
+2025/07/06 01:33:05 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:33:05 logger.go:36: [INFO]  request=a6e29c24-37a4-4ef8-8deb-c3ad18cbfbe5 | GET /funcionarios | status=200(OK) | 490.427µs
+2025/07/06 01:33:05 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:05 BST] GET /funcionarios - ::1 - 522.055µs
+2025/07/06 01:33:07 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:33:07 logger.go:36: [INFO]  request=c300eac9-e44d-48d8-8612-953f2bf6aa47 | GET /funcionarios | status=200(OK) | 705.137µs
+2025/07/06 01:33:07 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:07 BST] GET /funcionarios - ::1 - 759.239µs
+2025/07/06 01:33:07 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:33:07 logger.go:36: [INFO]  request=13a0a70e-e83c-40d3-9f0a-3456abfb3764 | GET /funcionarios | status=200(OK) | 1.353583ms
+2025/07/06 01:33:07 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:07 BST] GET /funcionarios - ::1 - 1.540126ms
+2025/07/06 01:33:07 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:33:07 logger.go:36: [INFO]  request=3e9aea36-422d-4a45-9111-06703a89b572 | GET /tarefas | status=200(OK) | 9.563639ms
+2025/07/06 01:33:07 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:07 BST] GET /tarefas - ::1 - 9.662146ms
+2025/07/06 01:33:07 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:33:07 logger.go:36: [INFO]  request=dfe1be1f-0bd2-49b7-93f4-f0b9c60cd8bb | GET /tarefas | status=200(OK) | 1.145504ms
+2025/07/06 01:33:07 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:07 BST] GET /tarefas - ::1 - 1.276207ms
+2025/07/06 01:33:24 logger.go:36: [INFO]  request=76bae3d9-8748-48f8-9261-7c1f800c7347 | PUT /tarefas/fbb02f82-6097-4867-86ad-3548008f317e | status=200(OK) | 10.628012ms
+2025/07/06 01:33:24 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:24 BST] PUT /tarefas/fbb02f82-6097-4867-86ad-3548008f317e - ::1 - 10.691783ms
+2025/07/06 01:33:26 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:33:26 logger.go:36: [INFO]  request=2412afaa-c18c-450f-a518-53e68d5ddd8e | GET /funcionarios | status=200(OK) | 565.634µs
+2025/07/06 01:33:26 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:26 BST] GET /funcionarios - ::1 - 606.817µs
+2025/07/06 01:33:26 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:33:26 logger.go:36: [INFO]  request=0ef01a8a-4576-4711-861c-2086fb68d11c | GET /tarefas | status=200(OK) | 1.522068ms
+2025/07/06 01:33:26 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:26 BST] GET /tarefas - ::1 - 1.547659ms
+2025/07/06 01:33:26 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:33:26 logger.go:36: [INFO]  request=7aaec191-5555-489d-ac71-5af513904d17 | GET /funcionarios | status=200(OK) | 484.332µs
+2025/07/06 01:33:26 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:26 BST] GET /funcionarios - ::1 - 534.63µs
+2025/07/06 01:33:26 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:33:26 logger.go:36: [INFO]  request=429de372-adc6-4fca-8ee5-44859ceb1df3 | GET /tarefas | status=200(OK) | 675.768µs
+2025/07/06 01:33:26 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:33:26 BST] GET /tarefas - ::1 - 725.28µs
+2025/07/06 01:34:18 logger.go:36: [INFO]  request=45e01657-ce26-4dda-a76a-a9e0c51cf079 | PUT /tarefas/8d97f6e9-3ff8-4af1-8506-9211629762ff | status=200(OK) | 2.81498ms
+2025/07/06 01:34:18 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:18 BST] PUT /tarefas/8d97f6e9-3ff8-4af1-8506-9211629762ff - ::1 - 2.915382ms
+2025/07/06 01:34:20 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:34:20 logger.go:36: [INFO]  request=5a003102-18fd-4a50-99c6-87fa259a42b5 | GET /funcionarios | status=200(OK) | 568.207µs
+2025/07/06 01:34:20 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:20 BST] GET /funcionarios - ::1 - 597.357µs
+2025/07/06 01:34:20 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:34:20 logger.go:36: [INFO]  request=6460022e-c136-483c-a025-d183ef88a1d2 | GET /tarefas | status=200(OK) | 819.563µs
+2025/07/06 01:34:20 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:20 BST] GET /tarefas - ::1 - 850.164µs
+2025/07/06 01:34:20 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:34:20 logger.go:36: [INFO]  request=2d48a896-e450-4067-be6f-cbcd6064aed8 | GET /funcionarios | status=200(OK) | 558.098µs
+2025/07/06 01:34:20 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:20 BST] GET /funcionarios - ::1 - 599.837µs
+2025/07/06 01:34:20 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:34:20 logger.go:36: [INFO]  request=d0125559-2160-49f2-959f-cc8825301fd5 | GET /tarefas | status=200(OK) | 827.55µs
+2025/07/06 01:34:20 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:20 BST] GET /tarefas - ::1 - 868.469µs
+2025/07/06 01:34:28 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:34:28 logger.go:36: [INFO]  request=65104e8f-ee6f-4076-9139-3d9211016171 | GET /funcionarios | status=200(OK) | 499.935µs
+2025/07/06 01:34:28 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:28 BST] GET /funcionarios - ::1 - 534.906µs
+2025/07/06 01:34:28 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:34:28 logger.go:36: [INFO]  request=4e650598-00e7-442e-b351-355d3798a42a | GET /funcionarios | status=200(OK) | 545.999µs
+2025/07/06 01:34:28 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:28 BST] GET /funcionarios - ::1 - 576.022µs
+2025/07/06 01:34:35 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:34:35 logger.go:36: [INFO]  request=71bdb349-4cfb-410c-b0d7-43246ac4330f | GET /funcionarios | status=200(OK) | 494.123µs
+2025/07/06 01:34:35 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:35 BST] GET /funcionarios - ::1 - 522.218µs
+2025/07/06 01:34:35 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:34:35 logger.go:36: [INFO]  request=1b4f8be6-41fd-4ab8-a8ec-5f9a6a287f17 | GET /funcionarios | status=200(OK) | 309.519µs
+2025/07/06 01:34:35 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:35 BST] GET /funcionarios - ::1 - 342.045µs
+2025/07/06 01:34:59 logger.go:36: [INFO]  Funcionario criado com sucesso (id=a96aaf29-b26d-41f4-bd23-3e78045374b0)
+2025/07/06 01:34:59 logger.go:36: [INFO]  request=208516f3-60b6-4fbf-85f1-c211cbf91543 | POST /funcionarios | status=201(Created) | 3.983534ms
+2025/07/06 01:34:59 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:34:59 BST] POST /funcionarios - ::1 - 4.033261ms
+2025/07/06 01:35:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:00 logger.go:36: [INFO]  request=52c0f8bd-4dfd-49c2-b5df-eb4b29fb9ae0 | GET /funcionarios | status=200(OK) | 639.77µs
+2025/07/06 01:35:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:00 BST] GET /funcionarios - ::1 - 679.554µs
+2025/07/06 01:35:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:00 logger.go:36: [INFO]  request=99c1284d-56c8-41d6-874e-4cf710613d62 | GET /funcionarios | status=200(OK) | 552.018µs
+2025/07/06 01:35:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:00 BST] GET /funcionarios - ::1 - 591.766µs
+2025/07/06 01:35:03 logger.go:36: [INFO]  Funcionario excluído com sucesso (id=9750254c-7bc9-447b-b268-ab0909abba09)
+2025/07/06 01:35:03 logger.go:36: [INFO]  request=fc1ab072-0d50-4291-9adb-da70fb6877b5 | DELETE /funcionarios/9750254c-7bc9-447b-b268-ab0909abba09 | status=200(OK) | 3.527056ms
+2025/07/06 01:35:03 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:03 BST] DELETE /funcionarios/9750254c-7bc9-447b-b268-ab0909abba09 - ::1 - 3.55909ms
+2025/07/06 01:35:06 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:06 logger.go:36: [INFO]  request=b743cdc5-cce7-404a-b6c7-e4f95f134362 | GET /funcionarios | status=200(OK) | 633.464µs
+2025/07/06 01:35:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:06 BST] GET /funcionarios - ::1 - 688.937µs
+2025/07/06 01:35:06 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:06 logger.go:36: [INFO]  request=5cb2bb80-9e78-45d2-bbad-d469e56b7bad | GET /funcionarios | status=200(OK) | 487.219µs
+2025/07/06 01:35:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:06 BST] GET /funcionarios - ::1 - 520.39µs
+2025/07/06 01:35:19 logger.go:37: [WARN]  Funcionário não encontrado: a96aaf29-b26d-41f4-bd23-3e78045374b0
+2025/07/06 01:35:19 logger.go:36: [INFO]  request=421cc1d8-4643-4eb9-ba57-dca380aa707f | POST /tarefas | status=400(Bad Request) | 746.571µs
+2025/07/06 01:35:19 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:19 BST] POST /tarefas - ::1 - 761.049µs
+2025/07/06 01:35:36 logger.go:37: [WARN]  Funcionário não encontrado: f8a1076d-4813-4d81-b523-3ef9cac902c5
+2025/07/06 01:35:36 logger.go:36: [INFO]  request=64039248-5e0a-4ec4-a931-662d4b2a6df6 | POST /tarefas | status=400(Bad Request) | 729.242µs
+2025/07/06 01:35:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:36 BST] POST /tarefas - ::1 - 748.948µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:48 logger.go:36: [INFO]  request=c42bb504-3eb1-4a5f-bc1d-bfa307249d73 | GET /funcionarios | status=200(OK) | 579.295µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:48 BST] GET /funcionarios - ::1 - 618.192µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:35:48 logger.go:36: [INFO]  request=1774070b-c050-4c54-9b39-5f9ccfd99de2 | GET /tarefas | status=200(OK) | 819.426µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:48 BST] GET /tarefas - ::1 - 848.39µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:48 logger.go:36: [INFO]  request=65cfa2c8-4bc3-4ad2-9bc3-ab36b5a40a48 | GET /funcionarios | status=200(OK) | 448.019µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:48 BST] GET /funcionarios - ::1 - 484.58µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:35:48 logger.go:36: [INFO]  request=5fbfa27f-e478-42e1-b10c-9955d70694f7 | GET /tarefas | status=200(OK) | 638.747µs
+2025/07/06 01:35:48 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:48 BST] GET /tarefas - ::1 - 682.6µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:55 logger.go:36: [INFO]  request=dc633434-246a-4c0a-85fa-3b74334c87cb | GET /funcionarios | status=200(OK) | 591.169µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:55 BST] GET /funcionarios - ::1 - 645.803µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:35:55 logger.go:36: [INFO]  request=2ca697b9-aa41-4123-8a0b-78620584fbf1 | GET /tarefas | status=200(OK) | 873.063µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:55 BST] GET /tarefas - ::1 - 892.288µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:35:55 logger.go:36: [INFO]  request=a0615e45-4ac4-4b83-99c1-30ffa829c142 | GET /funcionarios | status=200(OK) | 488.625µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:55 BST] GET /funcionarios - ::1 - 522.506µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:35:55 logger.go:36: [INFO]  request=e9558040-719d-4b86-8164-dd659be727de | GET /tarefas | status=200(OK) | 691.974µs
+2025/07/06 01:35:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:35:55 BST] GET /tarefas - ::1 - 819.917µs
+2025/07/06 01:36:03 logger.go:36: [INFO]  request=ad790021-e774-41e5-9a74-7ede839ee3bb | PUT /tarefas/f7ff0753-864b-48d7-bfeb-733a46b00a3a | status=400(Bad Request) | 1.290809ms
+2025/07/06 01:36:03 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:03 BST] PUT /tarefas/f7ff0753-864b-48d7-bfeb-733a46b00a3a - ::1 - 1.49353ms
+2025/07/06 01:36:15 logger.go:36: [INFO]  request=cb4390ad-9401-4854-98db-1e728ee99793 | PUT /tarefas/f7ff0753-864b-48d7-bfeb-733a46b00a3a | status=400(Bad Request) | 1.414864ms
+2025/07/06 01:36:15 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:15 BST] PUT /tarefas/f7ff0753-864b-48d7-bfeb-733a46b00a3a - ::1 - 1.492959ms
+2025/07/06 01:36:22 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:22 logger.go:36: [INFO]  request=5268d003-93fe-43e4-b2ed-5ebabf33c660 | GET /funcionarios | status=200(OK) | 527.484µs
+2025/07/06 01:36:22 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:22 BST] GET /funcionarios - ::1 - 566.56µs
+2025/07/06 01:36:22 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:36:22 logger.go:36: [INFO]  request=0bfa7f3f-68c4-485b-9968-6c344dbcadd1 | GET /tarefas | status=200(OK) | 870.803µs
+2025/07/06 01:36:22 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:22 BST] GET /tarefas - ::1 - 884.453µs
+2025/07/06 01:36:22 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:22 logger.go:36: [INFO]  request=fed294a6-52c3-4ec9-b8bd-c7a266b56131 | GET /funcionarios | status=200(OK) | 542.081µs
+2025/07/06 01:36:22 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:22 BST] GET /funcionarios - ::1 - 586.978µs
+2025/07/06 01:36:22 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:36:22 logger.go:36: [INFO]  request=e9ff1f4b-ad2a-48e3-84a5-5e5af51f37c6 | GET /tarefas | status=200(OK) | 721.459µs
+2025/07/06 01:36:22 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:22 BST] GET /tarefas - ::1 - 750.787µs
+2025/07/06 01:36:36 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:36 logger.go:36: [INFO]  request=830c163c-dc3d-4ca1-a376-a86f05dad40f | GET /funcionarios | status=200(OK) | 552.599µs
+2025/07/06 01:36:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:36 BST] GET /funcionarios - ::1 - 601.323µs
+2025/07/06 01:36:36 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:36 logger.go:36: [INFO]  request=d3daaa0d-102f-4f91-a67f-f9480eb8f89a | GET /funcionarios | status=200(OK) | 528.154µs
+2025/07/06 01:36:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:36 BST] GET /funcionarios - ::1 - 568.309µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:41 logger.go:36: [INFO]  request=ec0969ea-603c-4748-a9dd-9cd7b188aeb9 | GET /funcionarios | status=200(OK) | 602.271µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:41 BST] GET /funcionarios - ::1 - 651.181µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:36:41 logger.go:36: [INFO]  request=51f8454f-0b7a-4b88-86ae-0aded2e563c5 | GET /tarefas | status=200(OK) | 937.283µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:41 BST] GET /tarefas - ::1 - 967.847µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:41 logger.go:36: [INFO]  request=28d690e1-5f9c-46ec-b3d8-28d68a823e74 | GET /funcionarios | status=200(OK) | 488.923µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:41 BST] GET /funcionarios - ::1 - 532.023µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:36:41 logger.go:36: [INFO]  request=976ed5bb-a4db-4356-a85d-083ef1df46de | GET /tarefas | status=200(OK) | 629.559µs
+2025/07/06 01:36:41 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:41 BST] GET /tarefas - ::1 - 643.303µs
+2025/07/06 01:36:50 logger.go:36: [INFO]  request=b55aada8-a30b-45cf-992e-91f76b738fa6 | PUT /tarefas/fbb02f82-6097-4867-86ad-3548008f317e | status=200(OK) | 4.002522ms
+2025/07/06 01:36:50 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:50 BST] PUT /tarefas/fbb02f82-6097-4867-86ad-3548008f317e - ::1 - 4.086221ms
+2025/07/06 01:36:51 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:51 logger.go:36: [INFO]  request=0128bd8b-dce3-417f-b55d-3c560d01d1ba | GET /funcionarios | status=200(OK) | 484.18µs
+2025/07/06 01:36:51 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:51 BST] GET /funcionarios - ::1 - 510.187µs
+2025/07/06 01:36:51 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:36:51 logger.go:36: [INFO]  request=f4f8e95b-5ece-49fd-aeed-22281ced679a | GET /tarefas | status=200(OK) | 808.708µs
+2025/07/06 01:36:51 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:51 BST] GET /tarefas - ::1 - 843.848µs
+2025/07/06 01:36:51 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:36:51 logger.go:36: [INFO]  request=f866c0f8-7eed-4656-bc90-1c2468749682 | GET /funcionarios | status=200(OK) | 421.506µs
+2025/07/06 01:36:51 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:51 BST] GET /funcionarios - ::1 - 477.81µs
+2025/07/06 01:36:51 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 01:36:51 logger.go:36: [INFO]  request=0f9f7a59-a490-4644-878c-ecc4bd1304df | GET /tarefas | status=200(OK) | 693.365µs
+2025/07/06 01:36:51 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:51 BST] GET /tarefas - ::1 - 726.831µs
+2025/07/06 01:36:56 logger.go:36: [INFO]  request=d27614db-0c16-464d-90d9-084e39b61ac4 | DELETE /tarefas/8d97f6e9-3ff8-4af1-8506-9211629762ff | status=200(OK) | 9.585396ms
+2025/07/06 01:36:56 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:56 BST] DELETE /tarefas/8d97f6e9-3ff8-4af1-8506-9211629762ff - ::1 - 9.675327ms
+2025/07/06 01:36:58 logger.go:36: [INFO]  request=edf519b8-619e-456d-aa1f-e6d81ffaf0f2 | DELETE /tarefas/f7ff0753-864b-48d7-bfeb-733a46b00a3a | status=200(OK) | 9.728787ms
+2025/07/06 01:36:58 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:58 BST] DELETE /tarefas/f7ff0753-864b-48d7-bfeb-733a46b00a3a - ::1 - 9.794665ms
+2025/07/06 01:36:59 logger.go:36: [INFO]  request=6d667e54-f7aa-4078-9cb2-5747d6ad938d | DELETE /tarefas/fbb02f82-6097-4867-86ad-3548008f317e | status=200(OK) | 11.137059ms
+2025/07/06 01:36:59 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:36:59 BST] DELETE /tarefas/fbb02f82-6097-4867-86ad-3548008f317e - ::1 - 11.237926ms
+2025/07/06 01:37:01 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:37:01 logger.go:36: [INFO]  request=b8e7f5d9-86d5-4ef8-a96b-07145fba7152 | GET /funcionarios | status=200(OK) | 511.105µs
+2025/07/06 01:37:01 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:37:01 BST] GET /funcionarios - ::1 - 558.14µs
+2025/07/06 01:37:01 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:37:01 logger.go:36: [INFO]  request=84805dad-3619-41cc-ac03-8c38d5b21839 | GET /funcionarios | status=200(OK) | 1.253258ms
+2025/07/06 01:37:01 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:37:01 BST] GET /funcionarios - ::1 - 1.297955ms
+2025/07/06 01:37:10 logger.go:37: [WARN]  Funcionário não encontrado: f8a1076d-4813-4d81-b523-3ef9cac902c5
+2025/07/06 01:37:10 logger.go:36: [INFO]  request=2c1dcf9d-7f3c-46aa-b28b-33b407ebd335 | POST /tarefas | status=400(Bad Request) | 682.217µs
+2025/07/06 01:37:10 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:37:10 BST] POST /tarefas - ::1 - 696.658µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:37:45 logger.go:36: [INFO]  request=b85de03d-5af6-4463-9fea-a47f2c42d227 | GET /funcionarios | status=200(OK) | 484.094µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:37:45 BST] GET /funcionarios - ::1 - 515.523µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  Tarefas carregadas: 0
+2025/07/06 01:37:45 logger.go:36: [INFO]  request=ccd3fa97-71ca-452a-bb32-13f635fd3b2a | GET /tarefas | status=200(OK) | 631.914µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:37:45 BST] GET /tarefas - ::1 - 655.845µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:37:45 logger.go:36: [INFO]  request=f758fd0c-ab40-4da3-8e3f-250a99867178 | GET /funcionarios | status=200(OK) | 292.254µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:37:45 BST] GET /funcionarios - ::1 - 322.851µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  Tarefas carregadas: 0
+2025/07/06 01:37:45 logger.go:36: [INFO]  request=304f0866-c554-468c-acc1-8bfb3b74feed | GET /tarefas | status=200(OK) | 379.69µs
+2025/07/06 01:37:45 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:37:45 BST] GET /tarefas - ::1 - 405.028µs
+2025/07/06 01:40:12 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:40:12 logger.go:36: [INFO]  request=da887bcc-b772-4b4f-9149-32e517704332 | GET /funcionarios | status=200(OK) | 746.026µs
+2025/07/06 01:40:12 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:40:12 BST] GET /funcionarios - ::1 - 785.738µs
+2025/07/06 01:40:12 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:40:12 logger.go:36: [INFO]  request=61c0a9b2-e13a-4167-8163-6e85176c5b72 | GET /funcionarios | status=200(OK) | 524.621µs
+2025/07/06 01:40:12 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:40:12 BST] GET /funcionarios - ::1 - 562.084µs
+2025/07/06 01:51:55 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:51:55 logger.go:36: [INFO]  request=fae723a5-c476-4384-b3a1-ec9ecbc2234e | GET /funcionarios | status=200(OK) | 9.286336ms
+2025/07/06 01:51:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:51:55 BST] GET /funcionarios - ::1 - 9.370614ms
+2025/07/06 01:51:55 logger.go:36: [INFO]  Tarefas carregadas: 0
+2025/07/06 01:51:55 logger.go:36: [INFO]  request=d9a93cd7-74ff-4e9f-b2e6-89fdad382e87 | GET /tarefas | status=200(OK) | 9.445946ms
+2025/07/06 01:51:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:51:55 BST] GET /tarefas - ::1 - 9.488506ms
+2025/07/06 01:51:55 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:51:55 logger.go:36: [INFO]  request=81a143aa-fd87-4902-8676-1bde77baafb8 | GET /funcionarios | status=200(OK) | 630.484µs
+2025/07/06 01:51:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:51:55 BST] GET /funcionarios - ::1 - 678.501µs
+2025/07/06 01:51:55 logger.go:36: [INFO]  Tarefas carregadas: 0
+2025/07/06 01:51:55 logger.go:36: [INFO]  request=820b8d43-3ef0-4f92-abbe-87385d4bf099 | GET /tarefas | status=200(OK) | 632.945µs
+2025/07/06 01:51:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:51:55 BST] GET /tarefas - ::1 - 666.364µs
+2025/07/06 01:51:57 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:51:57 logger.go:36: [INFO]  request=601e4b8d-a0e5-4196-bb08-6fa442bbe570 | GET /funcionarios | status=200(OK) | 590.425µs
+2025/07/06 01:51:57 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:51:57 BST] GET /funcionarios - ::1 - 628.831µs
+2025/07/06 01:51:57 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:51:57 logger.go:36: [INFO]  request=67fe8476-81d9-432a-a24f-91543dadbb4d | GET /funcionarios | status=200(OK) | 426.949µs
+2025/07/06 01:51:57 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:51:57 BST] GET /funcionarios - ::1 - 568.753µs
+2025/07/06 01:52:10 logger.go:37: [WARN]  Funcionário não encontrado: f8a1076d-4813-4d81-b523-3ef9cac902c5
+2025/07/06 01:52:10 logger.go:36: [INFO]  request=771d4d92-7f68-43a5-9375-01dd79c066f7 | POST /tarefas | status=400(Bad Request) | 1.166773ms
+2025/07/06 01:52:10 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:52:10 BST] POST /tarefas - ::1 - 1.202564ms
+2025/07/06 01:53:09 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 01:53:09 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 01:53:13 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:53:13 logger.go:36: [INFO]  request=7c2668a7-526e-4abb-9837-249a550f310f | GET /funcionarios | status=200(OK) | 2.088437ms
+2025/07/06 01:53:13 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:53:13 BST] GET /funcionarios - ::1 - 2.357419ms
+2025/07/06 01:53:13 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:53:13 logger.go:36: [INFO]  request=268582eb-615f-4712-ac87-bbefa95aab7b | GET /funcionarios | status=200(OK) | 445.979µs
+2025/07/06 01:53:13 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:53:13 BST] GET /funcionarios - ::1 - 482.604µs
+2025/07/06 01:53:13 logger.go:36: [INFO]  Tarefas carregadas: 0
+2025/07/06 01:53:13 logger.go:36: [INFO]  request=15b1f435-771d-4b03-84e1-c73d6292c617 | GET /tarefas | status=200(OK) | 8.223244ms
+2025/07/06 01:53:13 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:53:13 BST] GET /tarefas - ::1 - 8.258235ms
+2025/07/06 01:53:13 logger.go:36: [INFO]  Tarefas carregadas: 0
+2025/07/06 01:53:13 logger.go:36: [INFO]  request=12873981-6f31-4e23-9157-129a7785d042 | GET /tarefas | status=200(OK) | 637.594µs
+2025/07/06 01:53:13 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:53:13 BST] GET /tarefas - ::1 - 677.796µs
+2025/07/06 01:53:15 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:53:15 logger.go:36: [INFO]  request=c01a4af9-ef43-49fc-aaeb-bef1b276275c | GET /funcionarios | status=200(OK) | 681.132µs
+2025/07/06 01:53:15 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:53:15 BST] GET /funcionarios - ::1 - 729.823µs
+2025/07/06 01:53:15 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 01:53:15 logger.go:36: [INFO]  request=f14458e8-ee83-4b6f-a440-904f0d9c5e93 | GET /funcionarios | status=200(OK) | 581.151µs
+2025/07/06 01:53:15 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:53:15 BST] GET /funcionarios - ::1 - 613.231µs
+2025/07/06 01:53:23 logger.go:37: [WARN]  Funcionário não encontrado: f8a1076d-4813-4d81-b523-3ef9cac902c5
+2025/07/06 01:53:23 logger.go:36: [INFO]  request=3f09c703-77ba-49dd-b90e-f3fdfe396a98 | POST /tarefas | status=400(Bad Request) | 986.509µs
+2025/07/06 01:53:23 logger.go:36: [INFO]  [Sun, 06 Jul 2025 01:53:23 BST] POST /tarefas - ::1 - 1.002654ms
+2025/07/06 02:02:04 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 02:02:04 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 02:02:11 logger.go:37: [WARN]  Data/Hora inválida: 2025-07-06T01:53
+2025/07/06 02:02:11 logger.go:36: [INFO]  request=9e0310e4-1c8e-43e7-bc05-1f37a8200c88 | POST /tarefas | status=400(Bad Request) | 1.783381ms
+2025/07/06 02:02:11 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:02:11 BST] POST /tarefas - ::1 - 1.815285ms
+2025/07/06 02:05:04 logger.go:36: [INFO]  Tarefa criada 331d450a-c654-4042-9d18-c2ae9810ce47
+2025/07/06 02:05:04 logger.go:36: [INFO]  request=abc28f12-eed1-4901-bd9f-92263748724f | POST /tarefas | status=201(Created) | 5.270161ms
+2025/07/06 02:05:04 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:04 BST] POST /tarefas - ::1 - 5.320438ms
+2025/07/06 02:05:06 logger.go:36: [INFO]  Tarefas carregadas: 1
+2025/07/06 02:05:06 logger.go:36: [INFO]  request=a3af769e-a127-4d44-a117-92e7e414a6a7 | GET /tarefas | status=200(OK) | 1.869853ms
+2025/07/06 02:05:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:06 BST] GET /tarefas - ::1 - 9.69635ms
+2025/07/06 02:05:06 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:06 logger.go:36: [INFO]  request=73b440ca-eead-4255-a5be-5232eb316f3b | GET /funcionarios | status=200(OK) | 993.144µs
+2025/07/06 02:05:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:06 BST] GET /funcionarios - ::1 - 1.066749ms
+2025/07/06 02:05:06 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:06 logger.go:36: [INFO]  request=9ed79ce1-4ea2-483e-b6cf-ca937ecc0d71 | GET /funcionarios | status=200(OK) | 579.228µs
+2025/07/06 02:05:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:06 BST] GET /funcionarios - ::1 - 625.363µs
+2025/07/06 02:05:06 logger.go:36: [INFO]  Tarefas carregadas: 1
+2025/07/06 02:05:06 logger.go:36: [INFO]  request=0b233c78-63d4-4fc6-9f11-50351856bd0b | GET /tarefas | status=200(OK) | 861.611µs
+2025/07/06 02:05:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:06 BST] GET /tarefas - ::1 - 916.449µs
+2025/07/06 02:05:18 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:18 logger.go:36: [INFO]  request=69f99394-e9d9-468b-ba00-ea527424b001 | GET /funcionarios | status=200(OK) | 824.662µs
+2025/07/06 02:05:18 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:18 BST] GET /funcionarios - ::1 - 889.551µs
+2025/07/06 02:05:18 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:18 logger.go:36: [INFO]  request=cffa6886-0193-4f96-9409-26306929d1e7 | GET /funcionarios | status=200(OK) | 833.656µs
+2025/07/06 02:05:18 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:18 BST] GET /funcionarios - ::1 - 912.1µs
+2025/07/06 02:05:18 logger.go:36: [INFO]  Tarefas carregadas: 1
+2025/07/06 02:05:18 logger.go:36: [INFO]  request=427ca14d-c037-4cf7-80d2-3b1bb74dee70 | GET /tarefas | status=200(OK) | 7.096716ms
+2025/07/06 02:05:18 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:18 BST] GET /tarefas - ::1 - 7.128519ms
+2025/07/06 02:05:18 logger.go:36: [INFO]  Tarefas carregadas: 1
+2025/07/06 02:05:18 logger.go:36: [INFO]  request=b2d5ab32-909f-4f2e-aee2-774702ab9682 | GET /tarefas | status=200(OK) | 837.27µs
+2025/07/06 02:05:18 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:18 BST] GET /tarefas - ::1 - 894.469µs
+2025/07/06 02:05:21 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:21 logger.go:36: [INFO]  request=bc6abbd1-c061-40ad-8054-5158557bd4bb | GET /funcionarios | status=200(OK) | 584.566µs
+2025/07/06 02:05:21 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:21 BST] GET /funcionarios - ::1 - 632.999µs
+2025/07/06 02:05:21 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:21 logger.go:36: [INFO]  request=441d0f99-dd6c-4a18-b6f3-50aab90ca0bc | GET /funcionarios | status=200(OK) | 541.28µs
+2025/07/06 02:05:21 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:21 BST] GET /funcionarios - ::1 - 570.675µs
+2025/07/06 02:05:34 logger.go:36: [INFO]  Tarefa criada 3509335a-d163-40a5-9f9d-868a431255cd
+2025/07/06 02:05:34 logger.go:36: [INFO]  request=f30d15d2-0df0-4f3f-8ed0-c4584ae4cb35 | POST /tarefas | status=201(Created) | 3.7296ms
+2025/07/06 02:05:34 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:34 BST] POST /tarefas - ::1 - 3.763144ms
+2025/07/06 02:05:36 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:36 logger.go:36: [INFO]  request=bb240ab9-5287-4ef4-a070-5a0d89d7f24f | GET /funcionarios | status=200(OK) | 854.23µs
+2025/07/06 02:05:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:36 BST] GET /funcionarios - ::1 - 928.611µs
+2025/07/06 02:05:36 logger.go:36: [INFO]  Tarefas carregadas: 2
+2025/07/06 02:05:36 logger.go:36: [INFO]  request=98e7e979-8534-4d85-9ac1-4ddaf0d8fb64 | GET /tarefas | status=200(OK) | 1.130719ms
+2025/07/06 02:05:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:36 BST] GET /tarefas - ::1 - 1.161853ms
+2025/07/06 02:05:36 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:05:36 logger.go:36: [INFO]  request=a125283d-ada3-499c-adc6-e5dfc4c58ce4 | GET /funcionarios | status=200(OK) | 697.687µs
+2025/07/06 02:05:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:36 BST] GET /funcionarios - ::1 - 735.43µs
+2025/07/06 02:05:36 logger.go:36: [INFO]  Tarefas carregadas: 2
+2025/07/06 02:05:36 logger.go:36: [INFO]  request=e2ef18a0-2d8d-419e-aa0c-44cbad45b189 | GET /tarefas | status=200(OK) | 783.74µs
+2025/07/06 02:05:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:05:36 BST] GET /tarefas - ::1 - 830.136µs
+2025/07/06 02:06:44 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:06:44 logger.go:36: [INFO]  request=4b6ac6bb-e0e2-4a6b-8afd-952183637364 | GET /funcionarios | status=200(OK) | 956.732µs
+2025/07/06 02:06:44 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:06:44 BST] GET /funcionarios - ::1 - 1.009288ms
+2025/07/06 02:06:44 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:06:44 logger.go:36: [INFO]  request=8a0011c9-a78b-4c72-87cc-525130e22eb5 | GET /funcionarios | status=200(OK) | 659.689µs
+2025/07/06 02:06:44 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:06:44 BST] GET /funcionarios - ::1 - 693.188µs
+2025/07/06 02:13:53 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:13:53 logger.go:36: [INFO]  request=6bf7eae9-c574-4f8a-a868-a7d037dfbfa1 | GET /funcionarios | status=200(OK) | 1.761531ms
+2025/07/06 02:13:53 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:13:53 BST] GET /funcionarios - ::1 - 1.851362ms
+2025/07/06 02:13:53 logger.go:36: [INFO]  Tarefas carregadas: 2
+2025/07/06 02:13:53 logger.go:36: [INFO]  request=8c5c3819-aa73-4335-a1f6-010432c02082 | GET /tarefas | status=200(OK) | 2.312986ms
+2025/07/06 02:13:53 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:13:53 BST] GET /tarefas - ::1 - 2.3582ms
+2025/07/06 02:13:53 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:13:53 logger.go:36: [INFO]  request=cfd3cbda-08b2-410c-aa65-9c9ccaed671f | GET /funcionarios | status=200(OK) | 545.77µs
+2025/07/06 02:13:53 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:13:53 BST] GET /funcionarios - ::1 - 586.19µs
+2025/07/06 02:13:53 logger.go:36: [INFO]  Tarefas carregadas: 2
+2025/07/06 02:13:53 logger.go:36: [INFO]  request=f0898897-4663-43a2-8775-c2779ec6a67e | GET /tarefas | status=200(OK) | 822.652µs
+2025/07/06 02:13:53 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:13:53 BST] GET /tarefas - ::1 - 854.442µs
+2025/07/06 02:13:57 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:13:57 logger.go:36: [INFO]  request=6cf92a00-ae0c-46bb-b0ba-61b01787bc06 | GET /funcionarios | status=200(OK) | 760.28µs
+2025/07/06 02:13:57 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:13:57 BST] GET /funcionarios - ::1 - 781.946µs
+2025/07/06 02:13:57 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:13:57 logger.go:36: [INFO]  request=b4e7dc6a-3aff-46f8-8d40-4f07c963654b | GET /funcionarios | status=200(OK) | 461.096µs
+2025/07/06 02:13:57 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:13:57 BST] GET /funcionarios - ::1 - 497.336µs
+2025/07/06 02:14:08 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:14:08 logger.go:36: [INFO]  request=89525a76-a9ad-4f0a-a00f-914cfc59f2d0 | POST /tarefas | status=400(Bad Request) | 11.253539ms
+2025/07/06 02:14:08 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:08 BST] POST /tarefas - ::1 - 11.268387ms
+2025/07/06 02:14:27 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:14:27 logger.go:36: [INFO]  request=51a20c6a-5cd5-46ec-8f3d-852a7220bb61 | POST /tarefas | status=400(Bad Request) | 755.397µs
+2025/07/06 02:14:27 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:27 BST] POST /tarefas - ::1 - 788.173µs
+2025/07/06 02:14:30 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:14:30 logger.go:36: [INFO]  request=ce1eb41d-141a-46b5-bfe9-2d87804e7982 | POST /tarefas | status=400(Bad Request) | 876.646µs
+2025/07/06 02:14:30 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:30 BST] POST /tarefas - ::1 - 896.467µs
+2025/07/06 02:14:34 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:14:34 logger.go:36: [INFO]  request=a0d75390-7a75-40ef-919f-d3d562508094 | POST /tarefas | status=400(Bad Request) | 737.922µs
+2025/07/06 02:14:34 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:34 BST] POST /tarefas - ::1 - 766.769µs
+2025/07/06 02:14:36 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:14:36 logger.go:36: [INFO]  request=d315c4c3-50e7-4d81-a334-1520f95cb53a | POST /tarefas | status=400(Bad Request) | 1.18509ms
+2025/07/06 02:14:36 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:36 BST] POST /tarefas - ::1 - 1.231056ms
+2025/07/06 02:14:39 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:14:39 logger.go:36: [INFO]  request=fcb089ea-06fb-49fa-8a75-e13e7a6fbb58 | POST /tarefas | status=400(Bad Request) | 684.605µs
+2025/07/06 02:14:39 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:39 BST] POST /tarefas - ::1 - 719.469µs
+2025/07/06 02:14:42 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:14:42 logger.go:36: [INFO]  request=99753647-a609-4cc2-b8ff-1612c48b6040 | POST /tarefas | status=400(Bad Request) | 670.6µs
+2025/07/06 02:14:42 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:42 BST] POST /tarefas - ::1 - 708.694µs
+2025/07/06 02:14:59 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:14:59 logger.go:36: [INFO]  request=e5429c76-ccf2-44fc-a1d4-ca38c8fe2459 | GET /funcionarios | status=200(OK) | 826.22µs
+2025/07/06 02:14:59 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:59 BST] GET /funcionarios - ::1 - 898.794µs
+2025/07/06 02:14:59 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:14:59 logger.go:36: [INFO]  request=baa987bd-3c7e-488a-a75d-d48b35763122 | GET /funcionarios | status=200(OK) | 584.939µs
+2025/07/06 02:14:59 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:14:59 BST] GET /funcionarios - ::1 - 620.877µs
+2025/07/06 02:15:04 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:15:04 logger.go:36: [INFO]  request=06623ab6-3baa-4d85-a704-0e7940590c98 | GET /funcionarios | status=200(OK) | 537.881µs
+2025/07/06 02:15:04 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:15:04 BST] GET /funcionarios - ::1 - 570.685µs
+2025/07/06 02:15:04 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:15:04 logger.go:36: [INFO]  request=568c9092-8c9f-426d-9c52-1300087c137b | GET /funcionarios | status=200(OK) | 486.23µs
+2025/07/06 02:15:04 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:15:04 BST] GET /funcionarios - ::1 - 805.312µs
+2025/07/06 02:15:13 logger.go:37: [WARN]  Funcionário não encontrado: 
+2025/07/06 02:15:13 logger.go:36: [INFO]  request=57001617-70da-492b-86de-85cd5f0158de | POST /tarefas | status=400(Bad Request) | 853.183µs
+2025/07/06 02:15:13 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:15:13 BST] POST /tarefas - ::1 - 885.596µs
+2025/07/06 02:32:52 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 02:32:52 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 02:32:57 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:32:57 logger.go:36: [INFO]  request=14da66b8-90e9-4484-8e71-3412591af68d | GET /funcionarios | status=200(OK) | 1.108598ms
+2025/07/06 02:32:57 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:32:57 BST] GET /funcionarios - ::1 - 1.173048ms
+2025/07/06 02:32:57 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:32:57 logger.go:36: [INFO]  request=acf800d6-6d68-4e26-834b-3f6d4d831437 | GET /funcionarios | status=200(OK) | 433.123µs
+2025/07/06 02:32:57 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:32:57 BST] GET /funcionarios - ::1 - 460.75µs
+2025/07/06 02:33:00 logger.go:36: [INFO]  Tarefas carregadas: 2
+2025/07/06 02:33:00 logger.go:36: [INFO]  request=34cb3b94-ecf9-4f67-851a-f261ebb14d69 | GET /tarefas | status=200(OK) | 1.558409ms
+2025/07/06 02:33:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:33:00 BST] GET /tarefas - ::1 - 1.608149ms
+2025/07/06 02:33:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:33:00 logger.go:36: [INFO]  request=5f0fad41-a74e-4f3b-94fe-26e704fad8c1 | GET /funcionarios | status=200(OK) | 5.684126ms
+2025/07/06 02:33:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:33:00 BST] GET /funcionarios - ::1 - 5.719444ms
+2025/07/06 02:33:00 logger.go:36: [INFO]  Tarefas carregadas: 2
+2025/07/06 02:33:00 logger.go:36: [INFO]  request=2e329212-9798-46d6-95af-6ba42473ca36 | GET /tarefas | status=200(OK) | 1.430501ms
+2025/07/06 02:33:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:33:00 BST] GET /tarefas - ::1 - 1.481695ms
+2025/07/06 02:33:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:33:00 logger.go:36: [INFO]  request=efb06e36-cabe-47de-867a-95ba7fc908df | GET /funcionarios | status=200(OK) | 305.019µs
+2025/07/06 02:33:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:33:00 BST] GET /funcionarios - ::1 - 335.421µs
+2025/07/06 02:33:02 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:33:02 logger.go:36: [INFO]  request=bcd78804-2fdb-4165-a392-49c8d446e3c5 | GET /funcionarios | status=200(OK) | 670.033µs
+2025/07/06 02:33:02 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:33:02 BST] GET /funcionarios - ::1 - 708.745µs
+2025/07/06 02:33:02 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:33:02 logger.go:36: [INFO]  request=8ad43cac-ddea-4b71-abb3-ea50bf91a348 | GET /funcionarios | status=200(OK) | 461.316µs
+2025/07/06 02:33:02 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:33:02 BST] GET /funcionarios - ::1 - 495.655µs
+2025/07/06 02:33:10 logger.go:38: [ERROR] JSON inválido (tarefa): parsing time "2025-07-06T02:33" as "2006-01-02T15:04:05Z07:00": cannot parse "" as ":"
+2025/07/06 02:33:10 logger.go:36: [INFO]  request=4639107e-5d93-4381-967d-01eab4142bc1 | POST /tarefas | status=400(Bad Request) | 147.321µs
+2025/07/06 02:33:10 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:33:10 BST] POST /tarefas - ::1 - 173.368µs
+2025/07/06 02:41:11 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 02:41:11 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 02:41:15 logger.go:36: [INFO]  Tarefa criada d5d3e3ae-a9ef-420c-aa92-d1a7a1e6a5ac
+2025/07/06 02:41:15 logger.go:36: [INFO]  request=2755d9cf-9db8-4474-9718-f4d7c2b37a10 | POST /tarefas | status=201(Created) | 5.477573ms
+2025/07/06 02:41:15 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:41:15 BST] POST /tarefas - ::1 - 5.508168ms
+2025/07/06 02:41:17 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:41:17 logger.go:36: [INFO]  request=b3d8ec9e-3377-4b27-9161-1ebb06241892 | GET /funcionarios | status=200(OK) | 716.364µs
+2025/07/06 02:41:17 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:41:17 BST] GET /funcionarios - ::1 - 765.974µs
+2025/07/06 02:41:17 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 02:41:17 logger.go:36: [INFO]  request=077bfa98-c793-4c84-bcba-a7ef9bb2f086 | GET /tarefas | status=200(OK) | 2.068898ms
+2025/07/06 02:41:17 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:41:17 BST] GET /tarefas - ::1 - 2.120031ms
+2025/07/06 02:41:17 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:41:17 logger.go:36: [INFO]  request=b624686d-355f-457f-9ab2-f1b909b046a0 | GET /funcionarios | status=200(OK) | 534.045µs
+2025/07/06 02:41:17 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:41:17 BST] GET /funcionarios - ::1 - 571.362µs
+2025/07/06 02:41:17 logger.go:36: [INFO]  Tarefas carregadas: 3
+2025/07/06 02:41:17 logger.go:36: [INFO]  request=bdf68c8d-cc27-495a-a6b1-349486017cb4 | GET /tarefas | status=200(OK) | 9.306799ms
+2025/07/06 02:41:17 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:41:17 BST] GET /tarefas - ::1 - 9.348678ms
+2025/07/06 02:41:28 logger.go:36: [INFO]  request=0f9020c9-ec69-4115-9cf1-8a1f653a3585 | PUT /tarefas/d5d3e3ae-a9ef-420c-aa92-d1a7a1e6a5ac | status=400(Bad Request) | 1.383102ms
+2025/07/06 02:41:28 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:41:28 BST] PUT /tarefas/d5d3e3ae-a9ef-420c-aa92-d1a7a1e6a5ac - ::1 - 1.458406ms
+2025/07/06 02:41:46 logger.go:36: [INFO]  request=b59ae215-e1bc-4661-977d-787be103fb90 | PUT /tarefas/d5d3e3ae-a9ef-420c-aa92-d1a7a1e6a5ac | status=400(Bad Request) | 593.05µs
+2025/07/06 02:41:46 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:41:46 BST] PUT /tarefas/d5d3e3ae-a9ef-420c-aa92-d1a7a1e6a5ac - ::1 - 672.008µs
+2025/07/06 02:42:02 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:42:02 logger.go:36: [INFO]  request=a9a391d5-ca31-4c28-a82d-f3c733c77571 | GET /funcionarios | status=200(OK) | 930.197µs
+2025/07/06 02:42:02 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:02 BST] GET /funcionarios - ::1 - 992.97µs
+2025/07/06 02:42:02 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:42:02 logger.go:36: [INFO]  request=e4e28aea-9456-4d21-bb8c-bc9a16015584 | GET /funcionarios | status=200(OK) | 514.375µs
+2025/07/06 02:42:02 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:02 BST] GET /funcionarios - ::1 - 551.759µs
+2025/07/06 02:42:15 logger.go:36: [INFO]  Tarefa criada 1fa47b1c-6524-41e1-975f-3a691f589d63
+2025/07/06 02:42:15 logger.go:36: [INFO]  request=e7df8461-51a2-427d-93dc-8846cb4c954f | POST /tarefas | status=201(Created) | 10.887228ms
+2025/07/06 02:42:15 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:15 BST] POST /tarefas - ::1 - 10.922016ms
+2025/07/06 02:42:16 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:42:16 logger.go:36: [INFO]  request=49d4d673-2935-40e7-851c-b013e585e9fa | GET /funcionarios | status=200(OK) | 555.986µs
+2025/07/06 02:42:16 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:16 BST] GET /funcionarios - ::1 - 601.71µs
+2025/07/06 02:42:16 logger.go:36: [INFO]  Tarefas carregadas: 4
+2025/07/06 02:42:16 logger.go:36: [INFO]  request=5620e400-7044-44c1-acc4-498b2f89d41d | GET /tarefas | status=200(OK) | 898.756µs
+2025/07/06 02:42:16 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:16 BST] GET /tarefas - ::1 - 929.27µs
+2025/07/06 02:42:16 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:42:16 logger.go:36: [INFO]  request=633db1b2-253a-4a1a-9d45-0674900c3a98 | GET /funcionarios | status=200(OK) | 485.515µs
+2025/07/06 02:42:16 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:16 BST] GET /funcionarios - ::1 - 519.129µs
+2025/07/06 02:42:16 logger.go:36: [INFO]  Tarefas carregadas: 4
+2025/07/06 02:42:16 logger.go:36: [INFO]  request=9d84f4b7-f87d-4a9d-bdb8-601bd5345022 | GET /tarefas | status=200(OK) | 766.677µs
+2025/07/06 02:42:16 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:16 BST] GET /tarefas - ::1 - 803.827µs
+2025/07/06 02:42:25 logger.go:36: [INFO]  request=b3294010-b15f-440f-a5de-6e531197c1e9 | PUT /tarefas/331d450a-c654-4042-9d18-c2ae9810ce47 | status=400(Bad Request) | 700.771µs
+2025/07/06 02:42:25 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:25 BST] PUT /tarefas/331d450a-c654-4042-9d18-c2ae9810ce47 - ::1 - 764.9µs
+2025/07/06 02:42:31 logger.go:36: [INFO]  request=c4634751-9f63-4428-b187-8fb0b89082a8 | PUT /tarefas/331d450a-c654-4042-9d18-c2ae9810ce47 | status=400(Bad Request) | 649.016µs
+2025/07/06 02:42:31 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:42:31 BST] PUT /tarefas/331d450a-c654-4042-9d18-c2ae9810ce47 - ::1 - 704.791µs
+2025/07/06 02:51:28 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 02:51:28 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 02:53:40 logger.go:36: [INFO]  ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 02:53:40 logger.go:36: [INFO]  📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 02:53:45 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:53:45 logger.go:36: [INFO]  request=4db9355b-5cae-4c0a-a7bd-e35f591411e4 | GET /funcionarios | status=200(OK) | 1.202106ms
+2025/07/06 02:53:45 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:53:45 BST] GET /funcionarios - ::1 - 1.345273ms
+2025/07/06 02:53:45 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:53:45 logger.go:36: [INFO]  request=2e93d99c-7001-4f0e-b034-b1afcd8f923d | GET /funcionarios | status=200(OK) | 530.267µs
+2025/07/06 02:53:45 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:53:45 BST] GET /funcionarios - ::1 - 564.215µs
+2025/07/06 02:53:53 logger.go:36: [INFO]  Dados de funcionario atualizado com sucesso (id=cd6d90da-6632-49de-8016-e5151864e3be)
+2025/07/06 02:53:53 logger.go:36: [INFO]  request=2aba6208-682c-43cb-a6c6-354aabe1bd13 | PUT /funcionarios/cd6d90da-6632-49de-8016-e5151864e3be | status=200(OK) | 10.379036ms
+2025/07/06 02:53:53 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:53:53 BST] PUT /funcionarios/cd6d90da-6632-49de-8016-e5151864e3be - ::1 - 10.411413ms
+2025/07/06 02:53:54 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:53:54 logger.go:36: [INFO]  request=59e6b151-04e1-4797-ada6-5c3b30e938d4 | GET /funcionarios | status=200(OK) | 719.563µs
+2025/07/06 02:53:54 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:53:54 BST] GET /funcionarios - ::1 - 758.01µs
+2025/07/06 02:53:54 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:53:54 logger.go:36: [INFO]  request=9694e822-a3de-442a-9c4d-81c736d90726 | GET /funcionarios | status=200(OK) | 487.8µs
+2025/07/06 02:53:54 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:53:54 BST] GET /funcionarios - ::1 - 529.248µs
+2025/07/06 02:54:00 logger.go:36: [INFO]  Funcionario excluído com sucesso (id=1249a00f-07c1-4129-9024-72980b67602f)
+2025/07/06 02:54:00 logger.go:36: [INFO]  request=91411da7-02eb-476c-acc7-8ca377bbea2b | DELETE /funcionarios/1249a00f-07c1-4129-9024-72980b67602f | status=200(OK) | 3.036457ms
+2025/07/06 02:54:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:00 BST] DELETE /funcionarios/1249a00f-07c1-4129-9024-72980b67602f - ::1 - 3.081545ms
+2025/07/06 02:54:03 logger.go:36: [INFO]  Funcionario excluído com sucesso (id=a96aaf29-b26d-41f4-bd23-3e78045374b0)
+2025/07/06 02:54:03 logger.go:36: [INFO]  request=78bc165b-1f84-47ba-8219-40bc57dc6598 | DELETE /funcionarios/a96aaf29-b26d-41f4-bd23-3e78045374b0 | status=200(OK) | 4.746395ms
+2025/07/06 02:54:03 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:03 BST] DELETE /funcionarios/a96aaf29-b26d-41f4-bd23-3e78045374b0 - ::1 - 4.789829ms
+2025/07/06 02:54:06 logger.go:36: [INFO]  Dados de funcionario atualizado com sucesso (id=cd6d90da-6632-49de-8016-e5151864e3be)
+2025/07/06 02:54:06 logger.go:36: [INFO]  request=1c58309d-dc8a-4fac-aeee-ef1fe9693ad8 | PUT /funcionarios/cd6d90da-6632-49de-8016-e5151864e3be | status=200(OK) | 9.102925ms
+2025/07/06 02:54:06 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:06 BST] PUT /funcionarios/cd6d90da-6632-49de-8016-e5151864e3be - ::1 - 9.120576ms
+2025/07/06 02:54:07 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:54:07 logger.go:36: [INFO]  request=cee0e46b-316a-4daf-a055-adf05f14b4e5 | GET /funcionarios | status=200(OK) | 607.762µs
+2025/07/06 02:54:07 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:07 BST] GET /funcionarios - ::1 - 659.429µs
+2025/07/06 02:54:07 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:54:07 logger.go:36: [INFO]  request=51e9feb6-e5dc-4418-8184-60705d9cbb23 | GET /funcionarios | status=200(OK) | 489.75µs
+2025/07/06 02:54:07 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:07 BST] GET /funcionarios - ::1 - 521.485µs
+2025/07/06 02:54:40 logger.go:36: [INFO]  Funcionario criado com sucesso (id=1123d708-1194-4d8b-a390-de5ab7b9a456)
+2025/07/06 02:54:40 logger.go:36: [INFO]  request=018984c0-9a5b-4b42-9576-f881fb6ffee8 | POST /funcionarios | status=201(Created) | 2.745736ms
+2025/07/06 02:54:40 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:40 BST] POST /funcionarios - ::1 - 2.762387ms
+2025/07/06 02:54:42 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:54:42 logger.go:36: [INFO]  request=8affe359-f209-40ee-a97b-9157ff88f8ad | GET /funcionarios | status=200(OK) | 663.773µs
+2025/07/06 02:54:42 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:42 BST] GET /funcionarios - ::1 - 742.797µs
+2025/07/06 02:54:42 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:54:42 logger.go:36: [INFO]  request=e70f167d-b6ee-49cf-84be-6b9bd892d26d | GET /funcionarios | status=200(OK) | 565.063µs
+2025/07/06 02:54:42 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:42 BST] GET /funcionarios - ::1 - 609.134µs
+2025/07/06 02:54:49 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:54:49 logger.go:36: [INFO]  request=4426c71e-4a56-469f-bfde-792c193d12be | GET /funcionarios | status=200(OK) | 660.278µs
+2025/07/06 02:54:49 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:49 BST] GET /funcionarios - ::1 - 699.115µs
+2025/07/06 02:54:49 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:54:49 logger.go:36: [INFO]  request=9f0259eb-8ad3-407c-b598-6b016e7864ef | GET /funcionarios | status=200(OK) | 583.57µs
+2025/07/06 02:54:49 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:54:49 BST] GET /funcionarios - ::1 - 624.41µs
+2025/07/06 02:55:00 logger.go:36: [INFO]  Tarefa criada c2f4db08-c612-4866-86dc-876fe72dab73
+2025/07/06 02:55:00 logger.go:36: [INFO]  request=fba55f85-d0a2-4541-bd4e-7a07ec7a85d3 | POST /tarefas | status=201(Created) | 11.397792ms
+2025/07/06 02:55:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:55:00 BST] POST /tarefas - ::1 - 11.467578ms
+2025/07/06 02:55:01 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 02:55:01 logger.go:36: [INFO]  request=28bcda0f-1b16-4137-a4a3-b46ea1437a3d | GET /tarefas | status=200(OK) | 1.328378ms
+2025/07/06 02:55:01 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:55:01 BST] GET /tarefas - ::1 - 1.362046ms
+2025/07/06 02:55:01 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 02:55:01 logger.go:36: [INFO]  request=005a99da-84be-4509-86c8-861592533a88 | GET /tarefas | status=200(OK) | 563.039µs
+2025/07/06 02:55:01 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:55:01 BST] GET /tarefas - ::1 - 600.851µs
+2025/07/06 02:55:01 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:55:01 logger.go:36: [INFO]  request=1304ec21-6a0a-42ad-bf62-38ed35647a36 | GET /funcionarios | status=200(OK) | 5.885308ms
+2025/07/06 02:55:01 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:55:01 BST] GET /funcionarios - ::1 - 5.918797ms
+2025/07/06 02:55:01 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:55:01 logger.go:36: [INFO]  request=5d3b06b3-4221-401a-a0f1-0bc09a9b4698 | GET /funcionarios | status=200(OK) | 379.735µs
+2025/07/06 02:55:01 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:55:01 BST] GET /funcionarios - ::1 - 417.589µs
+2025/07/06 02:58:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:58:00 logger.go:36: [INFO]  request=8b96bb5c-75c0-427d-92a5-204d0712fa92 | GET /funcionarios | status=200(OK) | 753.055µs
+2025/07/06 02:58:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:00 BST] GET /funcionarios - ::1 - 781.582µs
+2025/07/06 02:58:00 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 02:58:00 logger.go:36: [INFO]  request=b094b5c0-bf19-4017-9711-1d37839344b3 | GET /tarefas | status=200(OK) | 1.708351ms
+2025/07/06 02:58:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:00 BST] GET /tarefas - ::1 - 1.740586ms
+2025/07/06 02:58:00 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:58:00 logger.go:36: [INFO]  request=37307f28-cf5c-44f9-8ee6-a61b3c469d5c | GET /funcionarios | status=200(OK) | 457.114µs
+2025/07/06 02:58:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:00 BST] GET /funcionarios - ::1 - 494.201µs
+2025/07/06 02:58:00 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 02:58:00 logger.go:36: [INFO]  request=c0d72562-8dea-4f4b-962b-4df9adb8171d | GET /tarefas | status=200(OK) | 592.68µs
+2025/07/06 02:58:00 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:00 BST] GET /tarefas - ::1 - 628.82µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:58:40 logger.go:36: [INFO]  request=2d3df421-950b-4534-a677-12624f296753 | GET /funcionarios | status=200(OK) | 650.18µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:40 BST] GET /funcionarios - ::1 - 701.656µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 02:58:40 logger.go:36: [INFO]  request=49c1df64-8b12-4927-99fc-5f9a6e86d81c | GET /tarefas | status=200(OK) | 939.258µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:40 BST] GET /tarefas - ::1 - 979.206µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 02:58:40 logger.go:36: [INFO]  request=3adf1a71-d5d6-48dc-9c65-708feb6b434a | GET /funcionarios | status=200(OK) | 699.51µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:40 BST] GET /funcionarios - ::1 - 743.304µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 02:58:40 logger.go:36: [INFO]  request=de7f98b7-4ca1-4208-92f5-a2b6ffcb4773 | GET /tarefas | status=200(OK) | 843.458µs
+2025/07/06 02:58:40 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:40 BST] GET /tarefas - ::1 - 880.629µs
+2025/07/06 02:58:55 logger.go:36: [INFO]  request=2df53099-4f68-4a0c-8430-e7996d599715 | PUT /tarefas/c2f4db08-c612-4866-86dc-876fe72dab73 | status=400(Bad Request) | 115.662µs
+2025/07/06 02:58:55 logger.go:36: [INFO]  [Sun, 06 Jul 2025 02:58:55 BST] PUT /tarefas/c2f4db08-c612-4866-86dc-876fe72dab73 - ::1 - 230.965µs
+2025/07/06 03:04:10 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:04:10 logger.go:36: [INFO]  request=03c1e31e-ca57-4afe-8252-89e647fac446 | GET /funcionarios | status=200(OK) | 2.303597ms
+2025/07/06 03:04:10 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:04:10 BST] GET /funcionarios - ::1 - 2.413427ms
+2025/07/06 03:06:28 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:06:28 logger.go:36: [INFO]  request=8022c3b0-fb0f-47fb-b3a7-bcf54520b5ca | GET /funcionarios | status=200(OK) | 1.076353ms
+2025/07/06 03:06:28 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:06:28 BST] GET /funcionarios - ::1 - 1.182625ms
+2025/07/06 03:11:32 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:11:32 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:11:32 logger.go:36: [INFO]  request=a872ced7-aec0-40fd-bcf5-5b6e805d7639 | GET /funcionarios | status=200(OK) | 1.858496ms
+2025/07/06 03:11:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:11:32 BST] GET /funcionarios - ::1 - 1.907725ms
+2025/07/06 03:11:32 logger.go:36: [INFO]  request=009428ee-b87d-4b8e-b4c6-b0ac7f8d4a10 | GET /tarefas | status=200(OK) | 1.512714ms
+2025/07/06 03:11:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:11:32 BST] GET /tarefas - ::1 - 1.554631ms
+2025/07/06 03:11:32 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:11:32 logger.go:36: [INFO]  request=63152748-ddcf-4779-bb7d-4f092e808333 | GET /tarefas | status=200(OK) | 1.550342ms
+2025/07/06 03:11:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:11:32 BST] GET /tarefas - ::1 - 1.618464ms
+2025/07/06 03:11:32 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:11:32 logger.go:36: [INFO]  request=60d81de3-2358-4bed-b5f5-eb123933fb5c | GET /funcionarios | status=200(OK) | 403.288µs
+2025/07/06 03:11:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:11:32 BST] GET /funcionarios - ::1 - 440.237µs
+2025/07/06 03:11:33 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:11:33 logger.go:36: [INFO]  request=2fc6819f-dcda-4a47-be73-4dfe93b9a62f | GET /funcionarios | status=200(OK) | 574.203µs
+2025/07/06 03:11:33 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:11:33 BST] GET /funcionarios - ::1 - 608.172µs
+2025/07/06 03:11:33 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:11:33 logger.go:36: [INFO]  request=ba75ea19-ff94-441b-b153-948d5e3a16c8 | GET /funcionarios | status=200(OK) | 589.298µs
+2025/07/06 03:11:33 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:11:33 BST] GET /funcionarios - ::1 - 625.742µs
+2025/07/06 03:12:29 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:12:29 logger.go:36: [INFO]  request=ee6a6a63-ca72-4952-b038-3c38adb39c46 | GET /funcionarios | status=200(OK) | 855.998µs
+2025/07/06 03:12:29 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:12:29 BST] GET /funcionarios - ::1 - 903.14µs
+2025/07/06 03:16:16 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:16:16 logger.go:36: [INFO]  request=9e6ccdcb-24cd-41e2-81c6-af790bd1b8a9 | GET /funcionarios | status=200(OK) | 664.224µs
+2025/07/06 03:16:16 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:16:16 BST] GET /funcionarios - ::1 - 700.401µs
+2025/07/06 03:19:17 logger.go:36: [INFO]  request=8a61e5ae-dfec-4263-88fb-d5b0197df810 | PUT /tarefas/3509335a-d163-40a5-9f9d-868a431255cd | status=200(OK) | 13.562026ms
+2025/07/06 03:19:17 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:17 BST] PUT /tarefas/3509335a-d163-40a5-9f9d-868a431255cd - ::1 - 14.606147ms
+2025/07/06 03:19:19 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:19:19 logger.go:36: [INFO]  request=f730c1e6-8203-42be-ba15-a60894f88f1f | GET /funcionarios | status=200(OK) | 1.733322ms
+2025/07/06 03:19:19 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:19 BST] GET /funcionarios - ::1 - 1.785243ms
+2025/07/06 03:19:19 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:19:19 logger.go:36: [INFO]  request=eca31ca5-823e-4b67-9e35-c1867243439b | GET /tarefas | status=200(OK) | 1.837173ms
+2025/07/06 03:19:19 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:19 BST] GET /tarefas - ::1 - 1.895689ms
+2025/07/06 03:19:19 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:19:19 logger.go:36: [INFO]  request=fd555ef8-bada-4237-a5c0-d8da3662dfc3 | GET /tarefas | status=200(OK) | 785.034µs
+2025/07/06 03:19:19 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:19 BST] GET /tarefas - ::1 - 826.844µs
+2025/07/06 03:19:19 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:19:19 logger.go:36: [INFO]  request=6f9a15b3-f2bc-42d7-a591-48f30529c7ca | GET /funcionarios | status=200(OK) | 466.084µs
+2025/07/06 03:19:19 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:19 BST] GET /funcionarios - ::1 - 500.231µs
+2025/07/06 03:19:25 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:19:25 logger.go:36: [INFO]  request=7c009233-1b90-4ee0-8dc0-74b0990a069b | GET /funcionarios | status=200(OK) | 655.924µs
+2025/07/06 03:19:25 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:25 BST] GET /funcionarios - ::1 - 709.72µs
+2025/07/06 03:19:25 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:19:25 logger.go:36: [INFO]  request=13bd62ad-b9f6-4244-946c-f9718276090f | GET /funcionarios | status=200(OK) | 425.397µs
+2025/07/06 03:19:25 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:25 BST] GET /funcionarios - ::1 - 460.53µs
+2025/07/06 03:19:30 logger.go:36: [INFO]  request=8a3ebeae-3ed1-4536-b5b4-84d09f308d2e | PUT /tarefas/d5d3e3ae-a9ef-420c-aa92-d1a7a1e6a5ac | status=200(OK) | 11.719094ms
+2025/07/06 03:19:30 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:30 BST] PUT /tarefas/d5d3e3ae-a9ef-420c-aa92-d1a7a1e6a5ac - ::1 - 11.800547ms
+2025/07/06 03:19:32 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:19:32 logger.go:36: [INFO]  request=68e9292a-e547-4c44-b34e-41707d48cfc3 | GET /funcionarios | status=200(OK) | 587.516µs
+2025/07/06 03:19:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:32 BST] GET /funcionarios - ::1 - 623.164µs
+2025/07/06 03:19:32 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:19:32 logger.go:36: [INFO]  request=b36bbb50-7b95-4038-952a-b50fc964374a | GET /tarefas | status=200(OK) | 885.003µs
+2025/07/06 03:19:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:32 BST] GET /tarefas - ::1 - 921.059µs
+2025/07/06 03:19:32 logger.go:36: [INFO]  Funcionarios carregados: 
+2025/07/06 03:19:32 logger.go:36: [INFO]  request=74bbeff7-def0-454f-8b96-3806618e2c20 | GET /funcionarios | status=200(OK) | 407.23µs
+2025/07/06 03:19:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:32 BST] GET /funcionarios - ::1 - 445.814µs
+2025/07/06 03:19:32 logger.go:36: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:19:32 logger.go:36: [INFO]  request=b3de4aed-318b-43dc-ae8a-fbe3278c9b90 | GET /tarefas | status=200(OK) | 559.007µs
+2025/07/06 03:19:32 logger.go:36: [INFO]  [Sun, 06 Jul 2025 03:19:32 BST] GET /tarefas - ::1 - 583.5µs
+2025/07/06 03:27:14 logger.go:32: [INFO]  Servidor rodando em: http://localhost:8080
+2025/07/06 03:27:14 logger.go:32: [INFO]  Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 03:27:19 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:19 logger.go:32: [INFO]  request=20f46bd9-4dd4-4914-9c62-ca731183c8a9 | GET /funcionarios | status=200(OK) | 2.418408ms
+2025/07/06 03:27:19 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:19 BST] GET /funcionarios - ::1 - 2.658838ms
+2025/07/06 03:27:19 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:19 logger.go:32: [INFO]  request=c9434454-b206-4a09-950e-11ea103bb973 | GET /funcionarios | status=200(OK) | 569.24µs
+2025/07/06 03:27:19 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:19 BST] GET /funcionarios - ::1 - 614.598µs
+2025/07/06 03:27:21 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:21 logger.go:32: [INFO]  request=fccf1941-4a95-4cff-bc9e-8c3482d78485 | GET /funcionarios | status=200(OK) | 500.57µs
+2025/07/06 03:27:21 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:21 BST] GET /funcionarios - ::1 - 539.007µs
+2025/07/06 03:27:21 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:21 logger.go:32: [INFO]  request=cf432b77-f751-4902-8846-39ec4936e463 | GET /funcionarios | status=200(OK) | 484.361µs
+2025/07/06 03:27:21 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:21 BST] GET /funcionarios - ::1 - 530.537µs
+2025/07/06 03:27:21 logger.go:32: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:27:21 logger.go:32: [INFO]  request=2de4b218-181c-482f-b5d4-6daca838c2b8 | GET /tarefas | status=200(OK) | 9.130729ms
+2025/07/06 03:27:21 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:21 BST] GET /tarefas - ::1 - 9.167678ms
+2025/07/06 03:27:21 logger.go:32: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:27:21 logger.go:32: [INFO]  request=b4b1c59a-d579-4f41-8a83-c8cbccabc124 | GET /tarefas | status=200(OK) | 1.03415ms
+2025/07/06 03:27:21 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:21 BST] GET /tarefas - ::1 - 1.070346ms
+2025/07/06 03:27:22 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:22 logger.go:32: [INFO]  request=27dfc001-0551-47f3-8f7d-f28e720be831 | GET /funcionarios | status=200(OK) | 527.906µs
+2025/07/06 03:27:22 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:22 BST] GET /funcionarios - ::1 - 556.862µs
+2025/07/06 03:27:22 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:22 logger.go:32: [INFO]  request=837fef0f-e43c-42a4-a05a-e09ff9dcaea7 | GET /funcionarios | status=200(OK) | 470.59µs
+2025/07/06 03:27:22 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:22 BST] GET /funcionarios - ::1 - 499.28µs
+2025/07/06 03:27:26 logger.go:32: [INFO]  request=6a64fe99-808e-4085-a2e8-238f27104932 | PUT /tarefas/c2f4db08-c612-4866-86dc-876fe72dab73 | status=200(OK) | 12.08342ms
+2025/07/06 03:27:26 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:26 BST] PUT /tarefas/c2f4db08-c612-4866-86dc-876fe72dab73 - ::1 - 12.156864ms
+2025/07/06 03:27:27 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:27 logger.go:32: [INFO]  request=ec760417-89d9-4577-b0d2-56b82b87960f | GET /funcionarios | status=200(OK) | 448.023µs
+2025/07/06 03:27:27 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:27 BST] GET /funcionarios - ::1 - 485.825µs
+2025/07/06 03:27:27 logger.go:32: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:27:27 logger.go:32: [INFO]  request=a6ab1da5-b195-4222-8c98-cab04972f35c | GET /tarefas | status=200(OK) | 698.451µs
+2025/07/06 03:27:27 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:27 BST] GET /tarefas - ::1 - 715.374µs
+2025/07/06 03:27:27 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:27 logger.go:32: [INFO]  request=dc50b2d4-e317-4147-b968-89111ee5a21d | GET /funcionarios | status=200(OK) | 491.589µs
+2025/07/06 03:27:27 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:27 BST] GET /funcionarios - ::1 - 530.606µs
+2025/07/06 03:27:27 logger.go:32: [INFO]  Tarefas carregadas: 5
+2025/07/06 03:27:27 logger.go:32: [INFO]  request=7a3f9cb8-647b-451a-8a7d-8321f956c018 | GET /tarefas | status=200(OK) | 662.559µs
+2025/07/06 03:27:27 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:27 BST] GET /tarefas - ::1 - 695.695µs
+2025/07/06 03:27:30 logger.go:32: [INFO]  request=08ab57ce-a2c1-43a9-83bc-7500e8bed9bc | DELETE /tarefas/331d450a-c654-4042-9d18-c2ae9810ce47 | status=200(OK) | 9.557873ms
+2025/07/06 03:27:30 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:30 BST] DELETE /tarefas/331d450a-c654-4042-9d18-c2ae9810ce47 - ::1 - 9.640362ms
+2025/07/06 03:27:40 logger.go:32: [INFO]  request=bfc18ba2-4439-4632-9378-14f79c3ce5a0 | GET /swagger/index.html | status=200(OK) | 376.234µs
+2025/07/06 03:27:40 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:40 BST] GET /swagger/index.html - ::1 - 490.584µs
+2025/07/06 03:27:40 logger.go:32: [INFO]  request=125319ab-35e0-40e8-9232-842193b217fc | GET /swagger/swagger-ui.css | status=200(OK) | 249.784µs
+2025/07/06 03:27:40 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:40 BST] GET /swagger/swagger-ui.css - ::1 - 347.751µs
+2025/07/06 03:27:40 logger.go:32: [INFO]  request=84fbb2e2-af0c-4515-a2b1-606eea3cf957 | GET /swagger/swagger-ui-bundle.js | status=200(OK) | 1.140869ms
+2025/07/06 03:27:40 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:40 BST] GET /swagger/swagger-ui-bundle.js - ::1 - 1.227601ms
+2025/07/06 03:27:40 logger.go:32: [INFO]  request=a9d9d9d4-7df0-469d-a0e5-fb4962e76d03 | GET /swagger/swagger-ui-standalone-preset.js | status=200(OK) | 523.66µs
+2025/07/06 03:27:40 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:40 BST] GET /swagger/swagger-ui-standalone-preset.js - ::1 - 590.495µs
+2025/07/06 03:27:41 logger.go:32: [INFO]  request=346146ad-3678-42d6-a431-985ac6bd0d38 | GET /swagger/doc.json | status=200(OK) | 277.395µs
+2025/07/06 03:27:41 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:41 BST] GET /swagger/doc.json - ::1 - 354.42µs
+2025/07/06 03:27:41 logger.go:32: [INFO]  request=c0f9d705-536a-4f5a-b3f5-134f080ebd0a | GET /swagger/favicon-32x32.png | status=200(OK) | 57.111µs
+2025/07/06 03:27:41 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:41 BST] GET /swagger/favicon-32x32.png - ::1 - 153.522µs
+2025/07/06 03:27:46 logger.go:32: [INFO]  Funcionarios carregados: 
+2025/07/06 03:27:46 logger.go:32: [INFO]  request=39414a4b-12e2-450d-89ca-5695a5d002a5 | GET /funcionarios | status=200(OK) | 3.902069ms
+2025/07/06 03:27:46 logger.go:32: [INFO]  [Sun, 06 Jul 2025 03:27:46 BST] GET /funcionarios - ::1 - 3.94091ms
