@@ -1,0 +1,427 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "API para gerenciamento de tarefas e funcionários no HotelEase",
+        "title": "HotelEase API",
+        "contact": {
+            "name": "Suporte HotelEase"
+        },
+        "version": "1.0"
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "paths": {
+        "/funcionarios": {
+            "get": {
+                "description": "Retorna todos os funcionários cadastrados",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Funcionários"
+                ],
+                "summary": "Lista de funcionários",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.Funcionario"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Cadastro de Funcionario",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Funcionários"
+                ],
+                "summary": "Criacao de funcionário",
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.Funcionario"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/funcionarios/{id}": {
+            "get": {
+                "description": "Retorna todos os dados de um funcionário específico",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Funcionários"
+                ],
+                "summary": "Busca funcionário por ID",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID do Funcionário",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.Funcionario"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Remove permanentemente um funcionário do sistema",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Funcionários"
+                ],
+                "summary": "Exclui um funcionário",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID do Funcionário",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/tarefas": {
+            "get": {
+                "description": "Retorna todas as tarefas cadastradas",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Tarefas"
+                ],
+                "summary": "Lista de tarefas",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/models.Tarefa"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "description": "Cadastra uma nova tarefa",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Tarefas"
+                ],
+                "summary": "Criação de tarefa",
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/models.Tarefa"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/tarefas/{id}": {
+            "get": {
+                "description": "Retorna todos os dados de uma tarefa específica",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Tarefas"
+                ],
+                "summary": "Busca tarefa por ID",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID da Tarefa",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.Tarefa"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "description": "Atualiza todos os campos de uma tarefa existente",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Tarefas"
+                ],
+                "summary": "Atualização de tarefa",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID da Tarefa",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/models.Tarefa"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "description": "Remove permanentemente uma tarefa do sistema",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Tarefas"
+                ],
+                "summary": "Exclui uma tarefa",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "ID da Tarefa",
+                        "name": "id",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "models.Funcionario": {
+            "type": "object",
+            "properties": {
+                "ativo": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "cargo": {
+                    "type": "string",
+                    "example": "Recepcionista"
+                },
+                "email": {
+                    "type": "string",
+                    "example": "joao.silva@email.com"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "123e4567-e89b-12d3-a456-426614174000"
+                },
+                "nome": {
+                    "type": "string",
+                    "example": "João"
+                },
+                "sobrenome": {
+                    "type": "string",
+                    "example": "Silva"
+                },
+                "telefone": {
+                    "type": "string",
+                    "example": "+55 11 91234-5678"
+                }
+            }
+        },
+        "models.Tarefa": {
+            "type": "object",
+            "properties": {
+                "data_hora": {
+                    "type": "string",
+                    "example": "2025-07-05T15:04:05Z"
+                },
+                "descricao": {
+                    "type": "string",
+                    "example": "Limpar o quarto 204"
+                },
+                "funcionario": {
+                    "type": "string",
+                    "example": "123e4567-e89b-12d3-a456-426614174000"
+                },
+                "id": {
+                    "type": "string",
+                    "example": "123e4567-e89b-12d3-a456-426614174001"
+                },
+                "numero": {
+                    "type": "string",
+                    "example": "T-2025-001"
+                },
+                "status": {
+                    "type": "string",
+                    "example": "pendente"
+                },
+                "tipo": {
+                    "type": "string",
+                    "example": "Limpeza"
+                }
+            }
+        }
+    }
+}
