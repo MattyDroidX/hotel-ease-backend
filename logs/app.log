@@ -1,0 +1,88 @@
+2025/07/06 00:52:02 logger.go:23: [INFO] ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 00:52:02 logger.go:23: [INFO] 📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 00:52:21 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:21 logger.go:23: [INFO] RequestID: 73c79936-2563-4843-bf29-230a1d999920 | GET /funcionarios | Status: OK | Duração: 5.657361ms
+2025/07/06 00:52:21 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:21 BST] GET /funcionarios - ::1 - 5.688028ms
+2025/07/06 00:52:21 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:21 logger.go:23: [INFO] RequestID: fb3af201-e530-4374-bafd-7114553eb76a | GET /funcionarios | Status: OK | Duração: 484.541µs
+2025/07/06 00:52:21 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:21 BST] GET /funcionarios - ::1 - 497.519µs
+2025/07/06 00:52:31 logger.go:23: [INFO] Tarefas carregadas: 
+2025/07/06 00:52:31 logger.go:23: [INFO] RequestID: a7ed6900-bce2-4dd0-8fa5-6cc5915ec563 | GET /tarefas | Status: OK | Duração: 1.168215ms
+2025/07/06 00:52:31 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:31 BST] GET /tarefas - ::1 - 1.189524ms
+2025/07/06 00:52:31 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:31 logger.go:23: [INFO] RequestID: a804b510-70e0-4d6d-8eb5-165762fa99f8 | GET /funcionarios | Status: OK | Duração: 6.299895ms
+2025/07/06 00:52:31 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:31 BST] GET /funcionarios - ::1 - 6.340565ms
+2025/07/06 00:52:31 logger.go:23: [INFO] Tarefas carregadas: 
+2025/07/06 00:52:31 logger.go:23: [INFO] RequestID: f26133a9-6a7e-46a5-b385-26f10e9f68cd | GET /tarefas | Status: OK | Duração: 1.219345ms
+2025/07/06 00:52:31 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:31 BST] GET /tarefas - ::1 - 1.247881ms
+2025/07/06 00:52:31 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:31 logger.go:23: [INFO] RequestID: 1393dd2e-f2a6-4c6c-9365-1f313fae1fd5 | GET /funcionarios | Status: OK | Duração: 427.274µs
+2025/07/06 00:52:31 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:31 BST] GET /funcionarios - ::1 - 441.947µs
+2025/07/06 00:52:37 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:37 logger.go:23: [INFO] RequestID: 4068886b-5819-499a-ace1-91e3fb392687 | GET /funcionarios | Status: OK | Duração: 611.013µs
+2025/07/06 00:52:37 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:37 BST] GET /funcionarios - ::1 - 639.996µs
+2025/07/06 00:52:37 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:37 logger.go:23: [INFO] RequestID: 5d46d529-a55d-429c-b102-943650e06a6e | GET /funcionarios | Status: OK | Duração: 495.781µs
+2025/07/06 00:52:37 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:37 BST] GET /funcionarios - ::1 - 513.131µs
+2025/07/06 00:52:57 logger.go:23: [INFO] Tarefa criada com sucesso (id=5f9680f8-9277-40df-8427-7960f6b90baa)
+2025/07/06 00:52:57 logger.go:23: [INFO] RequestID: 870f2f6f-b4e7-4b86-8c82-e53a22f08eb0 | POST /tarefas | Status: Created | Duração: 14.020017ms
+2025/07/06 00:52:57 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:57 BST] POST /tarefas - ::1 - 14.030928ms
+2025/07/06 00:52:59 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:59 logger.go:23: [INFO] RequestID: c07a441f-d59a-4aa0-a9c5-cba06bc34239 | GET /funcionarios | Status: OK | Duração: 447.002µs
+2025/07/06 00:52:59 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:59 BST] GET /funcionarios - ::1 - 453.771µs
+2025/07/06 00:52:59 logger.go:23: [INFO] Tarefas carregadas: 
+2025/07/06 00:52:59 logger.go:23: [INFO] RequestID: cf9334a6-6aaa-43ab-9015-ecc1f9368b25 | GET /tarefas | Status: OK | Duração: 631.839µs
+2025/07/06 00:52:59 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:59 BST] GET /tarefas - ::1 - 639.667µs
+2025/07/06 00:52:59 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:52:59 logger.go:23: [INFO] RequestID: ef7103f3-a334-480b-87e1-87941336ebbf | GET /funcionarios | Status: OK | Duração: 527.312µs
+2025/07/06 00:52:59 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:59 BST] GET /funcionarios - ::1 - 540.548µs
+2025/07/06 00:52:59 logger.go:23: [INFO] Tarefas carregadas: 
+2025/07/06 00:52:59 logger.go:23: [INFO] RequestID: 1c1d7d02-2636-4110-bb62-354ec5c8cc24 | GET /tarefas | Status: OK | Duração: 554.331µs
+2025/07/06 00:52:59 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:52:59 BST] GET /tarefas - ::1 - 567.729µs
+2025/07/06 00:54:56 logger.go:23: [INFO] RequestID: 58827031-6083-4165-915f-7228e3d62c65 | GET /swagger/index.html | Status: OK | Duração: 2.089008ms
+2025/07/06 00:54:56 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:54:56 BST] GET /swagger/index.html - ::1 - 2.244702ms
+2025/07/06 00:54:56 logger.go:23: [INFO] RequestID: d14c45a0-6409-4d7f-a9c7-2bb7180f76da | GET /swagger/swagger-ui.css | Status: OK | Duração: 511.517µs
+2025/07/06 00:54:56 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:54:56 BST] GET /swagger/swagger-ui.css - ::1 - 567.607µs
+2025/07/06 00:54:56 logger.go:23: [INFO] RequestID: 87f7641e-14ec-4d9d-907d-3630b06a8499 | GET /swagger/swagger-ui-standalone-preset.js | Status: OK | Duração: 1.411231ms
+2025/07/06 00:54:56 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:54:56 BST] GET /swagger/swagger-ui-standalone-preset.js - ::1 - 1.474875ms
+2025/07/06 00:54:56 logger.go:23: [INFO] RequestID: 6f815f0c-f2e8-4f94-9053-e026b6ae9508 | GET /swagger/swagger-ui-bundle.js | Status: OK | Duração: 5.747649ms
+2025/07/06 00:54:56 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:54:56 BST] GET /swagger/swagger-ui-bundle.js - ::1 - 5.831934ms
+2025/07/06 00:54:56 logger.go:23: [INFO] RequestID: de63c68f-04a4-40b7-baca-6865e92fa17b | GET /swagger/doc.json | Status: OK | Duração: 310.509µs
+2025/07/06 00:54:56 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:54:56 BST] GET /swagger/doc.json - ::1 - 351.797µs
+2025/07/06 00:54:56 logger.go:23: [INFO] RequestID: 2a2c749f-45da-41fe-adb2-976e3b9504df | GET /swagger/favicon-32x32.png | Status: OK | Duração: 84.675µs
+2025/07/06 00:54:56 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:54:56 BST] GET /swagger/favicon-32x32.png - ::1 - 183.718µs
+2025/07/06 00:57:23 logger.go:23: [INFO] ✅ Servidor rodando em: http://localhost:8080
+2025/07/06 00:57:23 logger.go:23: [INFO] 📚 Swagger disponível em: http://localhost:8080/swagger/index.html
+2025/07/06 00:57:28 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:57:28 logger.go:23: [INFO] RequestID: 30ceff20-f4fb-4c29-bb6b-fd442dcbc05e | GET /funcionarios | Status: OK | Duração: 1.105767ms
+2025/07/06 00:57:28 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:28 BST] GET /funcionarios - ::1 - 1.115688ms
+2025/07/06 00:57:28 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:57:28 logger.go:23: [INFO] RequestID: 932d5f01-7ec0-4ed8-b890-79c2013ea09f | GET /funcionarios | Status: OK | Duração: 538.969µs
+2025/07/06 00:57:28 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:28 BST] GET /funcionarios - ::1 - 553.094µs
+2025/07/06 00:57:33 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:57:33 logger.go:23: [INFO] RequestID: da3d9822-d6a4-4a63-8f0e-1d340ffa8c96 | GET /funcionarios | Status: OK | Duração: 6.395276ms
+2025/07/06 00:57:33 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:33 BST] GET /funcionarios - ::1 - 6.419581ms
+2025/07/06 00:57:33 logger.go:23: [INFO] Tarefas carregadas: 
+2025/07/06 00:57:33 logger.go:23: [INFO] RequestID: 42a2a594-15a3-4647-b603-7bd558cd8195 | GET /tarefas | Status: OK | Duração: 6.255479ms
+2025/07/06 00:57:33 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:33 BST] GET /tarefas - ::1 - 6.278359ms
+2025/07/06 00:57:33 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:57:33 logger.go:23: [INFO] RequestID: 21c423f8-a717-4ad7-bfb6-a9f744669c8d | GET /funcionarios | Status: OK | Duração: 999.093µs
+2025/07/06 00:57:33 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:33 BST] GET /funcionarios - ::1 - 1.018759ms
+2025/07/06 00:57:33 logger.go:23: [INFO] Tarefas carregadas: 
+2025/07/06 00:57:33 logger.go:23: [INFO] RequestID: e317d4fd-fafb-422c-a1d6-c98bf74c1174 | GET /tarefas | Status: OK | Duração: 575.496µs
+2025/07/06 00:57:33 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:33 BST] GET /tarefas - ::1 - 588.045µs
+2025/07/06 00:57:38 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:57:38 logger.go:23: [INFO] RequestID: 352ae53f-0bf0-46dc-8ab6-10d003e7b7cf | GET /funcionarios | Status: OK | Duração: 9.53958ms
+2025/07/06 00:57:38 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:38 BST] GET /funcionarios - ::1 - 9.583134ms
+2025/07/06 00:57:38 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:57:38 logger.go:23: [INFO] RequestID: 72840740-9ca6-4a4f-a2e0-a44a7a753ad1 | GET /funcionarios | Status: OK | Duração: 490.693µs
+2025/07/06 00:57:38 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:57:38 BST] GET /funcionarios - ::1 - 504.471µs
+2025/07/06 00:58:01 logger.go:23: [INFO] Funcionario criado com sucesso (id=1249a00f-07c1-4129-9024-72980b67602f)
+2025/07/06 00:58:01 logger.go:23: [INFO] RequestID: aa379512-2339-45e0-aa48-3e8ac3283025 | POST /funcionarios | Status: Created | Duração: 2.430141ms
+2025/07/06 00:58:01 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:58:01 BST] POST /funcionarios - ::1 - 2.451393ms
+2025/07/06 00:58:03 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:58:03 logger.go:23: [INFO] RequestID: 3a230472-e240-4a0d-824d-0b7ae2cc8c6e | GET /funcionarios | Status: OK | Duração: 712.534µs
+2025/07/06 00:58:03 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:58:03 BST] GET /funcionarios - ::1 - 724.744µs
+2025/07/06 00:58:03 logger.go:23: [INFO] Funcionarios carregados: 
+2025/07/06 00:58:03 logger.go:23: [INFO] RequestID: ea132165-63e5-453c-b1cc-4ec09a1f5cac | GET /funcionarios | Status: OK | Duração: 443.32µs
+2025/07/06 00:58:03 logger.go:23: [INFO] [Sun, 06 Jul 2025 00:58:03 BST] GET /funcionarios - ::1 - 455.442µs
