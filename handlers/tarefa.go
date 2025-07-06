@@ -2,190 +2,129 @@ package handlers
 
 import (
 	"net/http"
-	"log"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
+
 	"github.com/MattyDroidX/hotel-ease-backend/api/db"
 	"github.com/MattyDroidX/hotel-ease-backend/models"
+	"github.com/MattyDroidX/hotel-ease-backend/utils"
+	"github.com/MattyDroidX/hotel-ease-backend/helpers"
 )
 
-// GetTarefas retorna a lista de todas as tarefas
-// @Summary Lista de tarefas
-// @Description Retorna todas as tarefas cadastradas
-// @Tags Tarefas
-// @Produce json
-// @Success 200 {array} models.Tarefa
-// @Failure 500 {object} map[string]string
-// @Router /tarefas [get]
+const qDTO = `
+SELECT  t.id,
+        t.numero,
+        t.descricao,
+        t.data_hora,
+        t.status,
+        t.tipo,
+
+        COALESCE(concat(f.nome,' ',f.sobrenome), '') AS funcionario_nome,
+        COALESCE(f.id::text, '')                    AS funcionario_id   -- ← evita NULL
+
+  FROM tarefas t
+  LEFT JOIN funcionarios f ON f.id = t.funcionario
+`
+
 func GetTarefas(c *gin.Context) {
-	var tarefas []models.Tarefa
-	err := db.DB.Select(&tarefas, "SELECT * FROM tarefas")
-	if err != nil {
-		log.Printf("Erro ao buscar tarefas: %v", err)
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"status":   "error",
-			"mensagem": "Erro ao buscar tarefas",
-			"detalhe":  err.Error(),
-		})
+	var out []models.TarefaDTO
+	if err := db.DB.Select(&out, qDTO+" ORDER BY t.data_hora DESC"); err != nil {
+		utils.Error("Erro ao buscar tarefas: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"erro": "db"})
 		return
 	}
-	c.JSON(http.StatusOK, gin.H{
-		"status":   "success",
-		"mensagem": "Tarefas carregadas com sucesso",
-		"dados":    tarefas,
-	})
+	utils.Info("Tarefas carregadas: %d", len(out))
+	c.JSON(http.StatusOK, gin.H{"dados": out})
 }
 
-// GetTarefaByID retorna uma tarefa por ID
-// @Summary Busca tarefa por ID
-// @Description Retorna todos os dados de uma tarefa específica
-// @Tags Tarefas
-// @Produce json
-// @Param id path string true "ID da Tarefa"
-// @Success 200 {object} models.Tarefa
-// @Failure 404 {object} map[string]string
-// @Router /tarefas/{id} [get]
 func GetTarefaByID(c *gin.Context) {
 	id := c.Param("id")
-	var t models.Tarefa
 
-	err := db.DB.Get(&t, "SELECT * FROM tarefas WHERE id = $1", id)
-	if err != nil {
-		c.JSON(http.StatusNotFound, gin.H{
-			"status":   "error",
-			"mensagem": "Tarefa não encontrada",
-			"detalhe": err.Error(),
-		})
+	var dto models.TarefaDTO
+	if err := db.DB.Get(&dto, qDTO+" WHERE t.id=$1 LIMIT 1", id); err != nil {
+		utils.Warn("Tarefa não encontrada: %s", id)
+		c.JSON(http.StatusNotFound, gin.H{"erro": "não encontrada"})
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{
-		"status":   "success",
-		"mensagem": "Tarefa encontrada",
-		"dados":    t,
-	})
+	c.JSON(http.StatusOK, dto)
 }
 
-// CreateTarefa cria uma nova tarefa
-// @Summary Criação de tarefa
-// @Description Cadastra uma nova tarefa
-// @Tags Tarefas
-// @Accept json
-// @Produce json
-// @Success 201 {object} models.Tarefa
-// @Failure 400 {object} map[string]string
-// @Failure 500 {object} map[string]string
-// @Router /tarefas [post]
 func CreateTarefa(c *gin.Context) {
-	var t models.Tarefa
-	if err := c.ShouldBindJSON(&t); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"status":   "error",
-			"mensagem": "JSON inválido",
-			"detalhe":  err.Error(),
-		})
-		return
-	}
-	t.ID = uuid.New().String()
+    var in models.TarefaIn
+    if err := c.ShouldBindJSON(&in); err != nil {
+        utils.Error("JSON inválido (tarefa): %v", err)
+        c.JSON(http.StatusBadRequest, gin.H{"erro": "json inválido"})
+        return
+    }
 
-	_, err := db.DB.Exec(`
-		INSERT INTO tarefas (id, numero, funcionario, descricao, data_hora, status, tipo)
-		VALUES ($1, $2, $3, $4, $5, $6, $7)`,
-		t.ID, t.Numero, t.Funcionario, t.Descricao, t.DataHora, t.Status, t.Tipo,
-	)
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"status":   "error",
-			"mensagem": "Erro ao salvar tarefa",
-			"detalhe":  err.Error(),
-		})
-		return
-	}
+    var ok bool
+    if err := db.DB.Get(&ok,
+        "SELECT true FROM funcionarios WHERE id=$1 LIMIT 1", in.FuncionarioID); err != nil || !ok {
+        utils.Warn("Funcionário não encontrado: %s", in.FuncionarioID)
+        c.JSON(http.StatusBadRequest, gin.H{"erro": "funcionário inexistente"})
+        return
+    }
 
-	c.JSON(http.StatusCreated, gin.H{
-		"status":   "success",
-		"mensagem": "Tarefa criada com sucesso",
-		"dados":    t,
-	})
+    t, err := helpers.ParseHTMLDateTime(in.DataHora)
+    if err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"erro": "dataHora inválida"})
+        return
+    }
+
+    id := uuid.NewString()
+    if _, err := db.DB.Exec(`
+       INSERT INTO tarefas (id,numero,funcionario,descricao,data_hora,status,tipo)
+       VALUES ($1,$2,$3,$4,$5,$6,$7)`,
+        id, in.Numero, in.FuncionarioID, in.Descricao, t, in.Status, in.Tipo); err != nil {
+        utils.Error("Erro insert tarefa: %v", err)
+        c.JSON(http.StatusInternalServerError, gin.H{"erro": "db"})
+        return
+    }
+    utils.Info("Tarefa criada %s", id)
+    c.JSON(http.StatusCreated, gin.H{"id": id})
 }
 
-// UpdateTarefa atualiza os dados de uma tarefa
-// @Summary Atualização de tarefa
-// @Description Atualiza todos os campos de uma tarefa existente
-// @Tags Tarefas
-// @Accept json
-// @Produce json
-// @Param id path string true "ID da Tarefa"
-// @Success 200 {object} models.Tarefa
-// @Failure 400 {object} map[string]string
-// @Failure 500 {object} map[string]string
-// @Router /tarefas/{id} [put]
 func UpdateTarefa(c *gin.Context) {
-	id := c.Param("id")
-	var t models.Tarefa
+    id := c.Param("id")
+    var in models.TarefaIn
+    if err := c.ShouldBindJSON(&in); err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"erro": "json inválido"})
+        return
+    }
+    var ok bool
+    if err := db.DB.Get(&ok,
+        "SELECT true FROM funcionarios WHERE id=$1 LIMIT 1", in.FuncionarioID); err != nil || !ok {
+        c.JSON(http.StatusBadRequest, gin.H{"erro": "funcionário inexistente"})
+        return
+    }
 
-	if err := c.ShouldBindJSON(&t); err != nil {
-		c.JSON(http.StatusBadRequest, gin.H{
-			"status":   "error",
-			"mensagem": "JSON inválido",
-			"detalhe":  err.Error(),
-		})
-		return
-	}
-	t.ID = id
+    t, err := helpers.ParseHTMLDateTime(in.DataHora)
+    if err != nil {
+        c.JSON(http.StatusBadRequest, gin.H{"erro": "dataHora inválida"})
+        return
+    }
 
-	_, err := db.DB.NamedExec(`
-		UPDATE tarefas SET
-			numero = :numero,
-			funcionario = :funcionario,
-			descricao = :descricao,
-			data_hora = :data_hora,
-			status = :status,
-			tipo = :tipo
-		WHERE id = :id
-	`, &t)
-
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"status":   "error",
-			"mensagem": "Erro ao atualizar tarefa",
-			"detalhe":  err.Error(),
-		})
-		return
-	}
-
-	c.JSON(http.StatusOK, gin.H{
-		"status":   "success",
-		"mensagem": "Tarefa atualizada com sucesso",
-		"dados":    t,
-	})
+    if _, err := db.DB.Exec(`
+        UPDATE tarefas SET
+          numero=$1, funcionario=$2, descricao=$3, data_hora=$4, status=$5, tipo=$6
+        WHERE id=$7`,
+        in.Numero, in.FuncionarioID, in.Descricao, t, in.Status, in.Tipo, id); err != nil {
+        utils.Error("Erro update tarefa: %v", err)
+        c.JSON(http.StatusInternalServerError, gin.H{"erro": "db"})
+        return
+    }
+    c.Status(http.StatusOK)
 }
 
-// DeleteTarefa exclui uma tarefa
-// @Summary Exclui uma tarefa
-// @Description Remove permanentemente uma tarefa do sistema
-// @Tags Tarefas
-// @Produce json
-// @Param id path string true "ID da Tarefa"
-// @Success 200 {object} map[string]string
-// @Failure 500 {object} map[string]string
-// @Router /tarefas/{id} [delete]
+
 func DeleteTarefa(c *gin.Context) {
 	id := c.Param("id")
-
-	_, err := db.DB.Exec("DELETE FROM tarefas WHERE id = $1", id)
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"status":   "error",
-			"mensagem": "Erro ao excluir tarefa",
-			"detalhe":  err.Error(),
-		})
+	if _, err := db.DB.Exec(`DELETE FROM tarefas WHERE id=$1`, id); err != nil {
+		utils.Error("Erro delete tarefa: %v", err)
+		c.JSON(http.StatusInternalServerError, gin.H{"erro": "db"})
 		return
 	}
-
-	c.JSON(http.StatusOK, gin.H{
-		"status":   "success",
-		"mensagem": "Tarefa excluída com sucesso",
-	})
+	c.Status(http.StatusOK)
 }

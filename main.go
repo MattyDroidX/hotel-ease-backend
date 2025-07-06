@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"os"
 
 	"github.com/gin-gonic/gin"
@@ -10,6 +9,7 @@ import (
 	"github.com/MattyDroidX/hotel-ease-backend/api/db"
 	"github.com/MattyDroidX/hotel-ease-backend/api/middleware"
 	"github.com/MattyDroidX/hotel-ease-backend/api/routes"
+	"github.com/MattyDroidX/hotel-ease-backend/utils"
 
 	// Swagger
 	"github.com/swaggo/files"
@@ -24,20 +24,24 @@ import (
 // @host localhost:8080
 // @BasePath /
 func main() {
-	// Configurar logs
-	log.SetOutput(os.Stdout)
-	log.SetFlags(log.LstdFlags | log.Lshortfile)
+	// Iniciar logs
+	utils.InitLogger()
+
+	if _, err := os.Stat("logs"); os.IsNotExist(err) {
+		os.Mkdir("logs", os.ModePerm)
+		utils.Info("Diretório de logs criado.")
+	}
 
 	// Carregar variáveis de ambiente
 	err := godotenv.Load()
 	if err != nil {
-		log.Println("⚠️  Arquivo .env não encontrado, usando variáveis padrão...")
+		utils.Warn("⚠️  Arquivo .env não encontrado, usando variáveis padrão...")
 	}
 
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
-		log.Println("⚠️  Variável PORT não encontrada, usando porta padrão:", port)
+		utils.Warn("⚠️  Variável PORT não encontrada, usando porta padrão:", port)
 	}
 
 	// Conectar ao banco e criar tabelas
@@ -45,8 +49,10 @@ func main() {
 	db.CreateTables()
 
 	// Criar roteador
-	router := gin.Default()
+	router := gin.New()
 	router.Use(middleware.CORSMiddleware())
+	router.Use(middleware.GinLogger())
+	router.Use(middleware.RequestLogger())
 
 	// Documentação Swagger
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
@@ -55,12 +61,12 @@ func main() {
 	routes.RegisterFuncionarioRoutes(router)
 	routes.RegisterTarefaRoutes(router)
 
-	log.Printf("✅ Servidor rodando em: http://localhost:%s", port)
-	log.Printf("📚 Swagger disponível em: http://localhost:%s/swagger/index.html", port)
+	utils.Info("Servidor rodando em: http://localhost:%s", port)
+	utils.Info("Swagger disponível em: http://localhost:%s/swagger/index.html", port)
 
 	// Rodar servidor
 	err = router.Run(":" + port)
 	if err != nil {
-		log.Fatalf("❌ Erro ao iniciar servidor: %v", err)
+		utils.Error("Erro ao iniciar servidor: %v", err.Error())
 	}
 }
