@@ -3,6 +3,7 @@ package middleware
 import (
 	"net/http"
 	"time"
+	"fmt"
 
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
@@ -19,7 +20,7 @@ func RequestLogger() gin.HandlerFunc {
 
 		c.Next()
 
-		utils.Info("request=%s | %s %s | status=%d(%s) | %v",
+		line := fmt.Sprintf("request=%s | %s %s | status=%d(%s) | %v",
 			requestID,
 			c.Request.Method,
 			c.Request.URL.Path,
@@ -27,5 +28,14 @@ func RequestLogger() gin.HandlerFunc {
 			http.StatusText(c.Writer.Status()),
 			time.Since(start),
 		)
+
+		switch status := c.Writer.Status(); {
+		case status >= 500:
+			utils.Error(line)
+		case status >= 400:
+			utils.Warn(line)
+		default:
+			utils.Info(line)
+		}
 	}
 }
