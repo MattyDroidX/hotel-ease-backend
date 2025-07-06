@@ -10,7 +10,7 @@
 
 > Este guia ensina, **passo a passo e do zero**, como preparar o ambiente,
 > compilar e executar o back-end do Hotel Ease em **Windows**, **macOS** ou
-> **Ubuntu/Linux** – mesmo que você nunca tenha usado Go ou PostgreSQL.
+> **Ubuntu/Linux**
 
 ---
 
