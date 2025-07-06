@@ -76,7 +76,21 @@ sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'minhaSenha';"
 git clone https://github.com/MattyDroidX/hotel-ease.git
 cd hotel-ease
 ```
-*(ou descompacte o arquivo zip/rar fornecido)*
+
+### *(ou descompacte o arquivo zip/rar fornecido)*
+
+#### O mesmo tera a estrutura de diretorios do apartado 10 final.
+
+```bash
+hotel-ease/
+├─ hotel-ease-backend/
+│  ├─ .env
+│  ├─ run.sh
+│  └─ …
+├─ hotel-ease-frontend/
+│  └─ …
+└─ Makefile
+```
 
 ---
 
