@@ -73,8 +73,8 @@ sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'minhaSenha';"
 ## 3. Baixando o projeto
 
 ```bash
-git clone https://github.com/MattyDroidX/hotel-ease.git
-cd hotel-ease
+git clone https://github.com/MattyDroidX/hotel-ease-backend.git
+cd hotel-ease-backend
 ```
 
 ### *(ou descompacte o arquivo zip/rar fornecido)*
